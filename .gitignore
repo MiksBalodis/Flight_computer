@@ -1,0 +1,20 @@
+# KiCad backup and temporary files
+*.bak
+*.tmp
+*.dcm-bak
+*.kicad_pcb-bak
+*.sch-bak
+*.kicad_sch-bak
+*.cache
+*.cache-*
+
+# Auto-generated project files
+*.pro~ 
+*.kicad_pcb-bak
+*.kicad_sch-bak
+
+# 3D models (optional, if you want to use Git LFS instead)
+*.wrl
+*.step
+*.stp
+*.stepmod
