@@ -4594,14 +4594,6 @@
 		(uuid "457297d7-be25-4072-9f5a-bd4617717d71")
 	)
 	(no_connect
-		(at 104.14 80.01)
-		(uuid "53832edc-095e-449b-b749-25ac26b08492")
-	)
-	(no_connect
-		(at 104.14 77.47)
-		(uuid "563cebc0-5ddc-4218-8535-2a016b7e1b2c")
-	)
-	(no_connect
 		(at 144.78 46.99)
 		(uuid "58367179-22c1-4afe-95df-a027313a3572")
 	)
@@ -5187,6 +5179,16 @@
 		)
 		(uuid "4f6c7934-208e-445f-8c5f-e1d99108ac89")
 	)
+	(label "PYRO_1"
+		(at 104.14 77.47 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4fe006e5-8485-46c4-a624-f83f8e624cc3")
+	)
 	(label "SYS_SWO"
 		(at 267.97 80.01 0)
 		(effects
@@ -5546,6 +5548,16 @@
 			(justify right bottom)
 		)
 		(uuid "df48385d-6dff-4657-adfb-62f564c6845f")
+	)
+	(label "PYRO_2"
+		(at 104.14 80.01 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e4390c64-0b72-4e30-be89-c9a4b58a08fb")
 	)
 	(label "FLASH_MISO"
 		(at 144.78 52.07 0)
