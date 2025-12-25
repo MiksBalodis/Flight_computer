@@ -4561,66 +4561,6 @@
 		)
 		(uuid "fe134e6b-2cbc-4a14-87a3-77c2f4605101")
 	)
-	(label "LORA_CS"
-		(at 44.45 167.64 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "00ca075f-eab3-480f-8f19-64f5eebbe96b")
-	)
-	(label "IMU_CS"
-		(at 264.16 58.42 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "08326464-b30e-4b12-b033-f2ed492ae1a8")
-	)
-	(label "LORA_DIO1"
-		(at 44.45 152.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0d8bdef7-3145-489c-81cf-160118c0e3f6")
-	)
-	(label "BMP_SDA"
-		(at 38.1 55.88 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "128d53ee-b62b-4205-a835-4e8b21522111")
-	)
-	(label "LORA_SCK"
-		(at 44.45 165.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1a89dc51-ab91-4a62-a495-b0346272d66b")
-	)
-	(label "GPS_SDA"
-		(at 118.11 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "208d8c88-759c-4fba-826c-27efd7dc4087")
-	)
 	(label "RXEN"
 		(at 101.6 162.56 0)
 		(effects
@@ -4630,16 +4570,6 @@
 			(justify left bottom)
 		)
 		(uuid "240dd08b-9263-4ac3-9cb0-c37501263f80")
-	)
-	(label "BMP_INT"
-		(at 58.42 73.66 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "246b09f1-8243-491c-837b-e4497ca8d11f")
 	)
 	(label "TXEN"
 		(at 137.16 173.99 0)
@@ -4651,76 +4581,6 @@
 		)
 		(uuid "249818db-e2b5-434e-af2a-9df43b0e469a")
 	)
-	(label "BMP_SDA"
-		(at 27.94 81.28 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "32c2f035-aa83-490c-acaf-a50047f26670")
-	)
-	(label "BMP_SCL"
-		(at 53.34 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "34b4fcf7-9144-4c58-b929-c0c9275f5d82")
-	)
-	(label "IMU_MOSI"
-		(at 264.16 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "55a143bc-face-4d69-8991-1b0d1b23eff0")
-	)
-	(label "GPS_RX"
-		(at 118.11 38.1 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "648462e0-0a25-435c-a3b0-31b84fdc28d3")
-	)
-	(label "GPS_SDA"
-		(at 162.56 31.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7313d64d-e269-495d-a8bf-cdc15496dbb8")
-	)
-	(label "GPS_SCL"
-		(at 118.11 48.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "7b1c1516-ce8b-4558-a31c-5f055a863201")
-	)
-	(label "BMP_SCL"
-		(at 27.94 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "83e098cb-7254-4bdf-bf61-ad1721b0f394")
-	)
 	(label "RXEN"
 		(at 106.68 173.99 180)
 		(effects
@@ -4730,76 +4590,6 @@
 			(justify right bottom)
 		)
 		(uuid "9e50ee1b-eaf5-49fc-9e37-893bed7e781a")
-	)
-	(label "IMU_MISO"
-		(at 264.16 55.88 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "af9ab798-7286-45c8-9728-935cff5526cd")
-	)
-	(label "LORA_MOSI"
-		(at 44.45 162.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "ca6ebff6-b7a2-4719-8cf3-d0643c8032e9")
-	)
-	(label "IMU_SCK"
-		(at 264.16 53.34 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "cfa28a20-4bff-44ea-bc47-f2026e2fc148")
-	)
-	(label "LORA_MISO"
-		(at 44.45 160.02 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "eba775f7-fce5-4eec-a2d1-4a9276d61d29")
-	)
-	(label "LORA_IO0"
-		(at 44.45 154.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "edb42751-e1df-4b8a-8bf3-2a025e04ab77")
-	)
-	(label "LORA_NRST"
-		(at 44.45 157.48 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f0342cce-1ece-4274-a5a0-e01a390e80e9")
-	)
-	(label "GPS_SCL"
-		(at 162.56 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f41dcfb2-9cdb-4cce-82f1-6631362fe794")
 	)
 	(label "TXEN"
 		(at 101.6 160.02 0)
@@ -4811,25 +4601,511 @@
 		)
 		(uuid "f467a066-e8b2-4741-a821-4c74ef96f7b1")
 	)
-	(label "IMU_INT1"
-		(at 238.76 55.88 180)
+	(global_label "IMU_MISO"
+		(shape input)
+		(at 264.16 55.88 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left)
 		)
-		(uuid "f61a0955-98ff-43e5-8519-4fa5b9d7db0e")
+		(uuid "0e209901-bb1d-4f14-b753-f4c751d3f029")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 276.0957 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
 	)
-	(label "GPS_TX"
-		(at 118.11 40.64 180)
+	(global_label "GPS_SDA"
+		(shape input)
+		(at 162.56 31.75 180)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify right)
 		)
-		(uuid "f9d0beb5-de2a-4fe9-a9d2-c0227a6114ef")
+		(uuid "1d351711-5f7d-454a-b7da-aef192f99361")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.2896 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LORA_MOSI"
+		(shape input)
+		(at 44.45 162.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "269b1572-e89a-4dcc-af2c-85bf57ea05ff")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.1838 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IMU_INT1"
+		(shape input)
+		(at 238.76 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "42f6e125-69a4-48a4-a2b3-a615d3500fb8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 227.3081 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LORA_NRST"
+		(shape input)
+		(at 44.45 157.48 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4d518706-f6a2-4380-9070-695b879877a5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.0024 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LORA_MISO"
+		(shape input)
+		(at 44.45 160.02 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "60c5bdb4-2923-4ace-a817-f1b4be830a30")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.1838 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPS_SCL"
+		(shape input)
+		(at 118.11 48.26 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "78cf59c0-af98-4a8e-8922-87cf1fc47ad8")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.9001 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IMU_SCK"
+		(shape input)
+		(at 264.16 53.34 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7bd09d5c-feb8-430f-9dd2-96fc07a5a8d4")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 275.249 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LORA_SCK"
+		(shape input)
+		(at 44.45 165.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8555e8a7-5c32-4eda-88f3-d9b6b1949147")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.0305 165.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IMU_MOSI"
+		(shape input)
+		(at 264.16 50.8 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9eba5623-a95f-4d87-8919-d95103583a3a")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 276.0957 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BMP_SCL"
+		(shape input)
+		(at 53.34 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a0ae53a7-a1b5-4d79-9b2c-0f388292d706")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 41.8882 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BMP_SDA"
+		(shape input)
+		(at 27.94 81.28 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a8b14205-72af-44ce-8273-1766c7dd39c5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4277 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LORA_CS"
+		(shape input)
+		(at 44.45 167.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "afeb6557-e835-4f5f-87cb-8f29edc279be")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 33.3005 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPS_SDA"
+		(shape input)
+		(at 118.11 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b76603a5-2e0d-432c-80ca-92f2363f7e16")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 106.8396 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPS_SCL"
+		(shape input)
+		(at 162.56 35.56 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b854dc97-2d05-47a4-aa4e-729e7f21b103")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 151.3501 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BMP_SDA"
+		(shape input)
+		(at 38.1 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bb1cc76f-1fa7-4988-ba43-80e29a4726e6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 26.5877 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPS_TX"
+		(shape input)
+		(at 118.11 40.64 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c20f4ae6-09c7-477e-93e9-ab96eab33220")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 108.2306 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BMP_INT"
+		(shape input)
+		(at 58.42 73.66 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c41f9192-57c6-44db-8d3a-9e918f01898f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 69.2671 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LORA_DIO1"
+		(shape input)
+		(at 44.45 152.4 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cfbcbd3b-f52e-45de-b7c2-3abecc61cc6d")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 31.3652 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "BMP_SCL"
+		(shape input)
+		(at 27.94 85.09 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e6750378-27e1-41fe-9ab5-804c988a8ad7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 16.4882 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "GPS_RX"
+		(shape input)
+		(at 118.11 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e858bfa8-c51b-4e35-b782-f21327f949f9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 107.9282 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "IMU_CS"
+		(shape input)
+		(at 264.16 58.42 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ee475818-43ea-4603-b3d8-7f613cb0be06")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 273.979 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "LORA_IO0"
+		(shape input)
+		(at 44.45 154.94 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fd16295f-13d1-4a29-94f4-e4d5bf198318")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 32.6352 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -5534,7 +5810,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "BMP388"
+		(property "Footprint" "Package_LGA:ST_HLGA-10_2x2mm_P0.5mm_LayoutBorder3x2y"
 			(at 68.58 138.1 0)
 			(effects
 				(font
@@ -5835,7 +6111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41f0a4de-93df-4c87-b1f0-98f87ff85e8c")
-		(property "Reference" "#PWR0115"
+		(property "Reference" "#PWR0133"
 			(at 200.66 49.53 0)
 			(effects
 				(font
@@ -5885,7 +6161,7 @@
 		(instances
 			(project "flight_comp"
 				(path "/99100214-bcab-4638-96e7-2342f837a8e5/ccff0650-056e-451f-a7b4-968f0cd07701"
-					(reference "#PWR0115")
+					(reference "#PWR0133")
 					(unit 1)
 				)
 			)
@@ -6474,7 +6750,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 172.212 26.67 90)
 			(effects
 				(font
@@ -6677,7 +6953,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 28.702 76.2 90)
 			(effects
 				(font
@@ -7294,7 +7570,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
 			(at 120.65 173.99 0)
 			(effects
 				(font
@@ -7503,7 +7779,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LSM6DSO:LGA14L"
+		(property "Footprint" "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y"
 			(at 251.46 60.96 0)
 			(effects
 				(font
@@ -8416,7 +8692,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 163.322 26.67 90)
 			(effects
 				(font
@@ -8554,7 +8830,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "MAX-M10S:MAXM10M00B"
+		(property "Footprint" "RF_GPS:ublox_MAX"
 			(at 147.32 64.77 0)
 			(effects
 				(font
@@ -9158,7 +9434,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 37.592 76.2 90)
 			(effects
 				(font
