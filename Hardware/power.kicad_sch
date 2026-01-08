@@ -12007,7 +12007,7 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ac270cbe-0cbb-4585-a297-743df42f951f")
+		(uuid "ac270cbe-0cbb-4585-a297-743df42f9520")
 		(property "Reference" "SW3"
 			(at 111.76 128.27 0)
 			(effects
@@ -12052,22 +12052,22 @@
 			)
 		)
 		(pin "6"
-			(uuid "3e89f61c-3d06-4bf8-a454-aba79a12ad59")
+			(uuid "3e89f61c-3d06-4bf8-a454-aba79a12ad5a")
 		)
 		(pin "2"
-			(uuid "e19ce38f-a08b-45ff-95ea-e60072cd1351")
+			(uuid "e19ce38f-a08b-45ff-95ea-e60072cd1352")
 		)
 		(pin "1"
-			(uuid "037ccec4-5bb7-4792-84cd-43aa58f2c272")
+			(uuid "037ccec4-5bb7-4792-84cd-43aa58f2c273")
 		)
 		(pin "3"
-			(uuid "176d7740-a75c-4317-a0ea-d9ae7d651efd")
+			(uuid "176d7740-a75c-4317-a0ea-d9ae7d651efe")
 		)
 		(pin "5"
-			(uuid "44ea04fd-1bb1-459a-9ec6-701df70f289f")
+			(uuid "44ea04fd-1bb1-459a-9ec6-701df70f28a0")
 		)
 		(pin "4"
-			(uuid "899769bb-1b77-483f-8627-87c8c268198c")
+			(uuid "899769bb-1b77-483f-8627-87c8c268198d")
 		)
 		(instances
 			(project ""
