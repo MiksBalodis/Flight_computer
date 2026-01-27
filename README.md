@@ -103,6 +103,163 @@ Sistēma sastāv no trim galvenajiem blokiem:
 - Kalmana filtrs stāvokļa novērtēšanai
 
 ---
+## Izstrādes plāns (10 nedēļas)
+
+Projekta izstrāde ir plānota 10 nedēļu laikā, pieņemot, ka avionikas plate jau ir uzdizainēta un pasūtīta, un nākamais solis ir tās salodēšana. Darbs tiek sadalīts starp diviem izstrādātājiem, lai maksimāli efektīvi izmantotu paralēlu izstrādi.
+
+### Lomu sadalījums
+- **Aleksandrs** – iegultās sistēmas programmēšana, STM32 firmware, sensoru draiveri, datu plūsma, vadība un telemetrija, sistēmas arhitektūras lēmumi,  integrācija, testēšana un dokumentācija.
+- **Miks** – raķetes tehniskā daļa, mehāniskā integrācija, Matlab/Simulink simulācijas, vadības algoritmu modelēšana un zemes stacijas aparatūra, sistēmas arhitektūras lēmumi,  integrācija, testēšana un dokumentācija.
+
+---
+
+### 1. nedēļa – Sistēmas inicializācija un modeļu sagatavošana
+**Aleksandrs:**
+- STM32CubeIDE projekta izveide
+- Pulksteņu (clock tree) un pamata perifēriju konfigurācija
+- Debug interfeisa (SWD/UART) inicializācija
+
+**Miks:**
+- Raķetes kustības konceptuālā modeļa izstrāde
+- Aktīvās kontroles uzdevuma definēšana
+- Sensoru mērījumu teorētisko modeļu izveide
+
+**Rezultāts:**  
+MCU veiksmīgi startē un sistēmas matemātiskais modelis ir definēts.
+
+---
+
+### 2. nedēļa – Perifēriju un datu plūsmas pamati
+**Aleksandrs:**
+- GPIO, UART, SPI un I2C konfigurācija
+- DMA izmantošanas pamati datu pārsūtīšanai
+- Vienkārša datu izvada testēšana
+
+**Miks:**
+- PID regulatora struktūras izveide Matlab/Simulink
+- Sākotnējo vadības parametru novērtēšana
+- Avionikas plates salodēšana
+
+**Rezultāts:**  
+MCU spēj komunicēt ar perifērijām, un PID struktūra ir gatava simulācijām, plate ir salodēta.
+
+---
+
+### 3. nedēļa – Avionikas plates salodēšana un sensoru testēšana
+**Aleksandrs:**
+- IMU (LSM6DSO) un barometra (BMP388) draiveru izstrāde
+- Sensoru datu nolasīšana un izvadīšana caur UART
+
+**Miks:**
+- Barošanas un signālu līmeņu pārbaude
+- Sensoru fiziskās integrācijas novērtēšana
+
+**Rezultāts:**  
+Pilnībā funkcionējoši aktīvie sensori.
+
+---
+
+### 4. nedēļa – GNSS un sensoru apvienošana
+**Aleksandrs:**
+- GNSS (MAX-M10S) draivera izstrāde
+- Laika sinhronizācija starp sensoriem
+- Datu struktūru definēšana
+
+**Miks:**
+- Sensoru kalibrācijas metodes
+- Kļūdu modelēšana
+- Mērījumu precizitātes izvērtēšana
+
+**Rezultāts:**  
+Apvienoti visi sensoru dati vienotā laika skalā.
+
+---
+
+### 5. nedēļa – Aktīvā vadība un izpildmehānismi
+**Aleksandrs:**
+- PWM izvades konfigurācija
+- Taimeru konfigurācija izpildmehānismiem
+- Izpildmehānismu testēšana
+
+**Miks:**
+- PID parametru regulēšana Simulink vidē
+- Stabilitātes analīze
+- Vadības algoritma validācija simulācijā
+
+**Rezultāts:**  
+Izpildmehānismi reaģē uz vadības signāliem paredzētajā veidā.
+
+---
+
+### 6. nedēļa – Datu apstrāde un uzglabāšana
+**Aleksandrs:**
+- USB Mass Storage režīma ieviešana
+- Datu struktūras optimizācija
+
+**Miks:**
+- Kalmana filtra izstrāde Simulink vidē
+- Algoritma sagatavošana ieviešanai C kodā
+
+**Rezultāts:**  
+Stabili ierakstīti un izgūstami lidojuma dati.
+
+---
+
+### 7. nedēļa – Telemetrija un zemes stacijas aparatūra
+**Aleksandrs:**
+- Telemetrijas protokola izstrāde
+- EBYTE E22 radio moduļa integrācija
+- Datu pakešu formāta definēšana
+
+**Miks:**
+- Zemes stacijas plates arhitektūras izstrāde
+- Komponentu izvēle un shēmas dizains
+- Komunikācijas interfeisa plānošana
+
+**Rezultāts:**  
+Bezvadu datu pārraide starp raķeti un zemes staciju.
+
+---
+
+### 8. nedēļa – Zemes stacijas programmatūra un GUI
+**Aleksandrs:**
+- Seriālās komunikācijas protokols ar datoru
+- Telemetrijas datu parsēšana
+
+**Miks:**
+- Grafiskās lietotāja saskarnes izstrāde (Svelte)
+- Reāllaika grafiki un datu attēlošana
+- Datu eksportēšana analīzei
+
+**Rezultāts:**  
+Darbojoša zemes stacija ar reāllaika datu vizualizāciju.
+
+---
+
+### 9. nedēļa – Integrācija un sistēmas testi
+**Aleksandrs:**
+- Pilna vadības cikla integrācija
+- Kļūdu apstrāde un drošības mehānismi
+
+**Miks:**
+- Vibrāciju testi
+- Sensoru trokšņu ietekmes pārbaude
+
+**Rezultāts:**  
+Stabila un integrēta sistēma bez kritiskām kļūdām.
+
+---
+
+### 10. nedēļa – Stabilizācija un dokumentācija
+**Abi:**
+- Koda un aparatūras kļūdu labošana
+- Projekta dokumentācijas pabeigšana
+- Demonstrācijas sagatavošana
+
+**Rezultāts:**  
+Pilnībā sagatavots projekts demonstrācijai un prezentācijai.
+
+---
 
 ## Licence
 Licence tiks noteikta projekta vēlākā izstrādes posmā.
