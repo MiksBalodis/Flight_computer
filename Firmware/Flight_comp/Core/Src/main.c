@@ -29,6 +29,7 @@
 #include "BMP388.h"
 #include "ee24.h"
 #include "servo.h"
+#include "GNSS.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

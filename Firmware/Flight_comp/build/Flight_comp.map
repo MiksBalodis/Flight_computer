@@ -72,6 +72,8 @@ Archive member included to satisfy reference by file (symbol)
                               /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o) (__aeabi_dcmpeq)
 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
                               /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-w_pow.o) (__aeabi_dcmpun)
+/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixdfsi.o)
+                              build/debug/GNSS.o (__aeabi_d2iz)
 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
                               build/debug/BMP388.o (__aeabi_d2f)
 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
@@ -186,6 +188,87 @@ Discarded input sections
  .debug_frame   0x00000000      0x1cc build/debug/BMP388.o
  .ARM.attributes
                 0x00000000       0x34 build/debug/BMP388.o
+ .text          0x00000000        0x0 build/debug/GNSS.o
+ .data          0x00000000        0x0 build/debug/GNSS.o
+ .bss           0x00000000        0x0 build/debug/GNSS.o
+ .text.GNSS_Init
+                0x00000000       0x40 build/debug/GNSS.o
+ .text.GNSS_GetUniqID
+                0x00000000       0x24 build/debug/GNSS.o
+ .text.GNSS_GetNavigatorData
+                0x00000000       0x24 build/debug/GNSS.o
+ .text.GNSS_GetPOSLLHData
+                0x00000000       0x24 build/debug/GNSS.o
+ .text.GNSS_GetPVTData
+                0x00000000       0x24 build/debug/GNSS.o
+ .text.GNSS_ParseUniqID
+                0x00000000       0x20 build/debug/GNSS.o
+ .text.GNSS_SetMode
+                0x00000000       0xb0 build/debug/GNSS.o
+ .text.GNSS_ParsePVTData
+                0x00000000      0x1b4 build/debug/GNSS.o
+ .text.GNSS_ParseNavigatorData
+                0x00000000       0x3c build/debug/GNSS.o
+ .text.GNSS_ParsePOSLLHData
+                0x00000000       0xf8 build/debug/GNSS.o
+ .text.GNSS_ParseBuffer
+                0x00000000       0x7e build/debug/GNSS.o
+ .text.GNSS_LoadConfig
+                0x00000000       0x44 build/debug/GNSS.o
+ .text.GNSS_Checksum
+                0x00000000        0x4 build/debug/GNSS.o
+ .bss.iLong     0x00000000        0x4 build/debug/GNSS.o
+ .bss.uLong     0x00000000        0x4 build/debug/GNSS.o
+ .bss.iShort    0x00000000        0x2 build/debug/GNSS.o
+ .bss.uShort    0x00000000        0x2 build/debug/GNSS.o
+ .rodata.setBikeMode
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.setWirstMode
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.setAirbone4GMode
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.setAirbone2GMode
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.setAirbone1GMode
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.setAutomotiveMode
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.setPedestrianMode
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.setStationaryMode
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.setPortableMode
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.getPVTData
+                0x00000000        0x8 build/debug/GNSS.o
+ .rodata.getPOSLLHData
+                0x00000000        0x8 build/debug/GNSS.o
+ .rodata.getNavigatorData
+                0x00000000        0x8 build/debug/GNSS.o
+ .rodata.getDeviceID
+                0x00000000        0x8 build/debug/GNSS.o
+ .rodata.setGNSS
+                0x00000000       0x2c build/debug/GNSS.o
+ .rodata.setNMEA410
+                0x00000000       0x1c build/debug/GNSS.o
+ .rodata.configUBX
+                0x00000000       0x1c build/debug/GNSS.o
+ .bss.GNSS_Handle
+                0x00000000       0xb0 build/debug/GNSS.o
+ .debug_info    0x00000000     0x10ff build/debug/GNSS.o
+ .debug_abbrev  0x00000000      0x2cd build/debug/GNSS.o
+ .debug_loclists
+                0x00000000      0x44c build/debug/GNSS.o
+ .debug_aranges
+                0x00000000       0x80 build/debug/GNSS.o
+ .debug_rnglists
+                0x00000000       0x5e build/debug/GNSS.o
+ .debug_line    0x00000000      0x958 build/debug/GNSS.o
+ .debug_str     0x00000000      0x999 build/debug/GNSS.o
+ .comment       0x00000000       0x3a build/debug/GNSS.o
+ .debug_frame   0x00000000      0x124 build/debug/GNSS.o
+ .ARM.attributes
+                0x00000000       0x34 build/debug/GNSS.o
  .text          0x00000000        0x0 build/debug/ee24.o
  .data          0x00000000        0x0 build/debug/ee24.o
  .bss           0x00000000        0x0 build/debug/ee24.o
@@ -1116,6 +1199,8 @@ Discarded input sections
  .bss.adc_buff  0x00000000        0x4 build/debug/main.o
  .bss.battery_v
                 0x00000000        0x4 build/debug/main.o
+ .bss.GNSS_Handle
+                0x00000000       0xb0 build/debug/main.o
  .text          0x00000000        0x0 build/debug/neopixel.o
  .data          0x00000000        0x0 build/debug/neopixel.o
  .bss           0x00000000        0x0 build/debug/neopixel.o
@@ -3103,6 +3188,11 @@ Discarded input sections
  .bss           0x00000000        0x0 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
  .ARM.attributes
                 0x00000000       0x22 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_unorddf2.o)
+ .text          0x00000000       0x50 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixdfsi.o)
+ .data          0x00000000        0x0 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixdfsi.o)
+ .bss           0x00000000        0x0 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixdfsi.o)
+ .ARM.attributes
+                0x00000000       0x22 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixdfsi.o)
  .text          0x00000000       0xa0 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
  .data          0x00000000        0x0 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
  .bss           0x00000000        0x0 /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
@@ -3145,6 +3235,7 @@ LOAD /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-
 LOAD /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
 LOAD build/debug/25flash.o
 LOAD build/debug/BMP388.o
+LOAD build/debug/GNSS.o
 LOAD build/debug/ee24.o
 LOAD build/debug/lsm6dso.o
 LOAD build/debug/lsm6dso_reg.o
@@ -4444,73 +4535,73 @@ LOAD /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-
  .comment       0x00000039       0x3a /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-init.o)
  .comment       0x00000039       0x3a /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
 
-.debug_info     0x00000000    0x2812f
- .debug_info    0x00000000     0x2951 build/debug/main.o
- .debug_info    0x00002951      0x9d0 build/debug/stm32f4xx_hal.o
- .debug_info    0x00003321      0xe96 build/debug/stm32f4xx_hal_adc.o
- .debug_info    0x000041b7      0xfe3 build/debug/stm32f4xx_hal_cortex.o
- .debug_info    0x0000519a      0xad9 build/debug/stm32f4xx_hal_dma.o
- .debug_info    0x00005c73      0x704 build/debug/stm32f4xx_hal_gpio.o
- .debug_info    0x00006377     0x3805 build/debug/stm32f4xx_hal_i2c.o
- .debug_info    0x00009b7c     0x1f70 build/debug/stm32f4xx_hal_msp.o
- .debug_info    0x0000baec     0x1c14 build/debug/stm32f4xx_hal_pcd.o
- .debug_info    0x0000d700      0x6f9 build/debug/stm32f4xx_hal_pcd_ex.o
- .debug_info    0x0000ddf9      0xa81 build/debug/stm32f4xx_hal_rcc.o
- .debug_info    0x0000e87a      0x651 build/debug/stm32f4xx_hal_rcc_ex.o
- .debug_info    0x0000eecb      0xfc1 build/debug/stm32f4xx_hal_rtc.o
- .debug_info    0x0000fe8c     0x1ccc build/debug/stm32f4xx_hal_spi.o
- .debug_info    0x00011b58     0x3c53 build/debug/stm32f4xx_hal_tim.o
- .debug_info    0x000157ab     0x1aec build/debug/stm32f4xx_hal_tim_ex.o
- .debug_info    0x00017297     0x4018 build/debug/stm32f4xx_hal_uart.o
- .debug_info    0x0001b2af      0x8b7 build/debug/stm32f4xx_it.o
- .debug_info    0x0001bb66     0x1e82 build/debug/stm32f4xx_ll_usb.o
- .debug_info    0x0001d9e8      0x527 build/debug/system_stm32f4xx.o
- .debug_info    0x0001df0f      0x7cd build/debug/usb_device.o
- .debug_info    0x0001e6dc     0x215d build/debug/usbd_conf.o
- .debug_info    0x00020839     0x123f build/debug/usbd_core.o
- .debug_info    0x00021a78     0x142f build/debug/usbd_ctlreq.o
- .debug_info    0x00022ea7      0x5dd build/debug/usbd_desc.o
- .debug_info    0x00023484      0x8f6 build/debug/usbd_ioreq.o
- .debug_info    0x00023d7a     0x113b build/debug/usbd_msc.o
- .debug_info    0x00024eb5      0xfd8 build/debug/usbd_msc_bot.o
- .debug_info    0x00025e8d      0x129 build/debug/usbd_msc_data.o
- .debug_info    0x00025fb6     0x1d88 build/debug/usbd_msc_scsi.o
- .debug_info    0x00027d3e      0x3c1 build/debug/usbd_storage_if.o
- .debug_info    0x000280ff       0x30 build/debug/startup_stm32f405xx.o
+.debug_info     0x00000000    0x285ff
+ .debug_info    0x00000000     0x2e21 build/debug/main.o
+ .debug_info    0x00002e21      0x9d0 build/debug/stm32f4xx_hal.o
+ .debug_info    0x000037f1      0xe96 build/debug/stm32f4xx_hal_adc.o
+ .debug_info    0x00004687      0xfe3 build/debug/stm32f4xx_hal_cortex.o
+ .debug_info    0x0000566a      0xad9 build/debug/stm32f4xx_hal_dma.o
+ .debug_info    0x00006143      0x704 build/debug/stm32f4xx_hal_gpio.o
+ .debug_info    0x00006847     0x3805 build/debug/stm32f4xx_hal_i2c.o
+ .debug_info    0x0000a04c     0x1f70 build/debug/stm32f4xx_hal_msp.o
+ .debug_info    0x0000bfbc     0x1c14 build/debug/stm32f4xx_hal_pcd.o
+ .debug_info    0x0000dbd0      0x6f9 build/debug/stm32f4xx_hal_pcd_ex.o
+ .debug_info    0x0000e2c9      0xa81 build/debug/stm32f4xx_hal_rcc.o
+ .debug_info    0x0000ed4a      0x651 build/debug/stm32f4xx_hal_rcc_ex.o
+ .debug_info    0x0000f39b      0xfc1 build/debug/stm32f4xx_hal_rtc.o
+ .debug_info    0x0001035c     0x1ccc build/debug/stm32f4xx_hal_spi.o
+ .debug_info    0x00012028     0x3c53 build/debug/stm32f4xx_hal_tim.o
+ .debug_info    0x00015c7b     0x1aec build/debug/stm32f4xx_hal_tim_ex.o
+ .debug_info    0x00017767     0x4018 build/debug/stm32f4xx_hal_uart.o
+ .debug_info    0x0001b77f      0x8b7 build/debug/stm32f4xx_it.o
+ .debug_info    0x0001c036     0x1e82 build/debug/stm32f4xx_ll_usb.o
+ .debug_info    0x0001deb8      0x527 build/debug/system_stm32f4xx.o
+ .debug_info    0x0001e3df      0x7cd build/debug/usb_device.o
+ .debug_info    0x0001ebac     0x215d build/debug/usbd_conf.o
+ .debug_info    0x00020d09     0x123f build/debug/usbd_core.o
+ .debug_info    0x00021f48     0x142f build/debug/usbd_ctlreq.o
+ .debug_info    0x00023377      0x5dd build/debug/usbd_desc.o
+ .debug_info    0x00023954      0x8f6 build/debug/usbd_ioreq.o
+ .debug_info    0x0002424a     0x113b build/debug/usbd_msc.o
+ .debug_info    0x00025385      0xfd8 build/debug/usbd_msc_bot.o
+ .debug_info    0x0002635d      0x129 build/debug/usbd_msc_data.o
+ .debug_info    0x00026486     0x1d88 build/debug/usbd_msc_scsi.o
+ .debug_info    0x0002820e      0x3c1 build/debug/usbd_storage_if.o
+ .debug_info    0x000285cf       0x30 build/debug/startup_stm32f405xx.o
 
-.debug_abbrev   0x00000000     0x4c73
- .debug_abbrev  0x00000000      0x335 build/debug/main.o
- .debug_abbrev  0x00000335      0x240 build/debug/stm32f4xx_hal.o
- .debug_abbrev  0x00000575      0x278 build/debug/stm32f4xx_hal_adc.o
- .debug_abbrev  0x000007ed      0x391 build/debug/stm32f4xx_hal_cortex.o
- .debug_abbrev  0x00000b7e      0x2c0 build/debug/stm32f4xx_hal_dma.o
- .debug_abbrev  0x00000e3e      0x202 build/debug/stm32f4xx_hal_gpio.o
- .debug_abbrev  0x00001040      0x2c3 build/debug/stm32f4xx_hal_i2c.o
- .debug_abbrev  0x00001303      0x279 build/debug/stm32f4xx_hal_msp.o
- .debug_abbrev  0x0000157c      0x2db build/debug/stm32f4xx_hal_pcd.o
- .debug_abbrev  0x00001857      0x1f3 build/debug/stm32f4xx_hal_pcd_ex.o
- .debug_abbrev  0x00001a4a      0x2c7 build/debug/stm32f4xx_hal_rcc.o
- .debug_abbrev  0x00001d11      0x1c4 build/debug/stm32f4xx_hal_rcc_ex.o
- .debug_abbrev  0x00001ed5      0x1f3 build/debug/stm32f4xx_hal_rtc.o
- .debug_abbrev  0x000020c8      0x272 build/debug/stm32f4xx_hal_spi.o
- .debug_abbrev  0x0000233a      0x271 build/debug/stm32f4xx_hal_tim.o
- .debug_abbrev  0x000025ab      0x26f build/debug/stm32f4xx_hal_tim_ex.o
- .debug_abbrev  0x0000281a      0x326 build/debug/stm32f4xx_hal_uart.o
- .debug_abbrev  0x00002b40      0x1db build/debug/stm32f4xx_it.o
- .debug_abbrev  0x00002d1b      0x329 build/debug/stm32f4xx_ll_usb.o
- .debug_abbrev  0x00003044      0x11e build/debug/system_stm32f4xx.o
- .debug_abbrev  0x00003162      0x1af build/debug/usb_device.o
- .debug_abbrev  0x00003311      0x33e build/debug/usbd_conf.o
- .debug_abbrev  0x0000364f      0x2f8 build/debug/usbd_core.o
- .debug_abbrev  0x00003947      0x343 build/debug/usbd_ctlreq.o
- .debug_abbrev  0x00003c8a      0x1ec build/debug/usbd_desc.o
- .debug_abbrev  0x00003e76      0x1b0 build/debug/usbd_ioreq.o
- .debug_abbrev  0x00004026      0x36d build/debug/usbd_msc.o
- .debug_abbrev  0x00004393      0x30e build/debug/usbd_msc_bot.o
- .debug_abbrev  0x000046a1       0x6d build/debug/usbd_msc_data.o
- .debug_abbrev  0x0000470e      0x37b build/debug/usbd_msc_scsi.o
- .debug_abbrev  0x00004a89      0x1c6 build/debug/usbd_storage_if.o
- .debug_abbrev  0x00004c4f       0x24 build/debug/startup_stm32f405xx.o
+.debug_abbrev   0x00000000     0x4c9d
+ .debug_abbrev  0x00000000      0x35f build/debug/main.o
+ .debug_abbrev  0x0000035f      0x240 build/debug/stm32f4xx_hal.o
+ .debug_abbrev  0x0000059f      0x278 build/debug/stm32f4xx_hal_adc.o
+ .debug_abbrev  0x00000817      0x391 build/debug/stm32f4xx_hal_cortex.o
+ .debug_abbrev  0x00000ba8      0x2c0 build/debug/stm32f4xx_hal_dma.o
+ .debug_abbrev  0x00000e68      0x202 build/debug/stm32f4xx_hal_gpio.o
+ .debug_abbrev  0x0000106a      0x2c3 build/debug/stm32f4xx_hal_i2c.o
+ .debug_abbrev  0x0000132d      0x279 build/debug/stm32f4xx_hal_msp.o
+ .debug_abbrev  0x000015a6      0x2db build/debug/stm32f4xx_hal_pcd.o
+ .debug_abbrev  0x00001881      0x1f3 build/debug/stm32f4xx_hal_pcd_ex.o
+ .debug_abbrev  0x00001a74      0x2c7 build/debug/stm32f4xx_hal_rcc.o
+ .debug_abbrev  0x00001d3b      0x1c4 build/debug/stm32f4xx_hal_rcc_ex.o
+ .debug_abbrev  0x00001eff      0x1f3 build/debug/stm32f4xx_hal_rtc.o
+ .debug_abbrev  0x000020f2      0x272 build/debug/stm32f4xx_hal_spi.o
+ .debug_abbrev  0x00002364      0x271 build/debug/stm32f4xx_hal_tim.o
+ .debug_abbrev  0x000025d5      0x26f build/debug/stm32f4xx_hal_tim_ex.o
+ .debug_abbrev  0x00002844      0x326 build/debug/stm32f4xx_hal_uart.o
+ .debug_abbrev  0x00002b6a      0x1db build/debug/stm32f4xx_it.o
+ .debug_abbrev  0x00002d45      0x329 build/debug/stm32f4xx_ll_usb.o
+ .debug_abbrev  0x0000306e      0x11e build/debug/system_stm32f4xx.o
+ .debug_abbrev  0x0000318c      0x1af build/debug/usb_device.o
+ .debug_abbrev  0x0000333b      0x33e build/debug/usbd_conf.o
+ .debug_abbrev  0x00003679      0x2f8 build/debug/usbd_core.o
+ .debug_abbrev  0x00003971      0x343 build/debug/usbd_ctlreq.o
+ .debug_abbrev  0x00003cb4      0x1ec build/debug/usbd_desc.o
+ .debug_abbrev  0x00003ea0      0x1b0 build/debug/usbd_ioreq.o
+ .debug_abbrev  0x00004050      0x36d build/debug/usbd_msc.o
+ .debug_abbrev  0x000043bd      0x30e build/debug/usbd_msc_bot.o
+ .debug_abbrev  0x000046cb       0x6d build/debug/usbd_msc_data.o
+ .debug_abbrev  0x00004738      0x37b build/debug/usbd_msc_scsi.o
+ .debug_abbrev  0x00004ab3      0x1c6 build/debug/usbd_storage_if.o
+ .debug_abbrev  0x00004c79       0x24 build/debug/startup_stm32f405xx.o
 
 .debug_loclists
                 0x00000000    0x1674b
@@ -4702,74 +4793,74 @@ LOAD /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-
  .debug_rnglists
                 0x000014e1       0x19 build/debug/startup_stm32f405xx.o
 
-.debug_line     0x00000000    0x21a46
- .debug_line    0x00000000      0xe1e build/debug/main.o
- .debug_line    0x00000e1e      0x623 build/debug/stm32f4xx_hal.o
- .debug_line    0x00001441     0x114d build/debug/stm32f4xx_hal_adc.o
- .debug_line    0x0000258e      0x8e6 build/debug/stm32f4xx_hal_cortex.o
- .debug_line    0x00002e74      0xeef build/debug/stm32f4xx_hal_dma.o
- .debug_line    0x00003d63      0x7b1 build/debug/stm32f4xx_hal_gpio.o
- .debug_line    0x00004514     0x5527 build/debug/stm32f4xx_hal_i2c.o
- .debug_line    0x00009a3b      0x998 build/debug/stm32f4xx_hal_msp.o
- .debug_line    0x0000a3d3     0x1516 build/debug/stm32f4xx_hal_pcd.o
- .debug_line    0x0000b8e9      0x35c build/debug/stm32f4xx_hal_pcd_ex.o
- .debug_line    0x0000bc45      0xc7a build/debug/stm32f4xx_hal_rcc.o
- .debug_line    0x0000c8bf      0x702 build/debug/stm32f4xx_hal_rcc_ex.o
- .debug_line    0x0000cfc1     0x1157 build/debug/stm32f4xx_hal_rtc.o
- .debug_line    0x0000e118     0x252d build/debug/stm32f4xx_hal_spi.o
- .debug_line    0x00010645     0x481b build/debug/stm32f4xx_hal_tim.o
- .debug_line    0x00014e60     0x1b73 build/debug/stm32f4xx_hal_tim_ex.o
- .debug_line    0x000169d3     0x35cc build/debug/stm32f4xx_hal_uart.o
- .debug_line    0x00019f9f      0x37c build/debug/stm32f4xx_it.o
- .debug_line    0x0001a31b     0x2027 build/debug/stm32f4xx_ll_usb.o
- .debug_line    0x0001c342      0x30a build/debug/system_stm32f4xx.o
- .debug_line    0x0001c64c      0x2d9 build/debug/usb_device.o
- .debug_line    0x0001c925      0x8d6 build/debug/usbd_conf.o
- .debug_line    0x0001d1fb      0xaaf build/debug/usbd_core.o
- .debug_line    0x0001dcaa      0xdd5 build/debug/usbd_ctlreq.o
- .debug_line    0x0001ea7f      0x3f0 build/debug/usbd_desc.o
- .debug_line    0x0001ee6f      0x372 build/debug/usbd_ioreq.o
- .debug_line    0x0001f1e1      0x732 build/debug/usbd_msc.o
- .debug_line    0x0001f913      0x68f build/debug/usbd_msc_bot.o
- .debug_line    0x0001ffa2      0x226 build/debug/usbd_msc_data.o
- .debug_line    0x000201c8     0x14e5 build/debug/usbd_msc_scsi.o
- .debug_line    0x000216ad      0x323 build/debug/usbd_storage_if.o
- .debug_line    0x000219d0       0x76 build/debug/startup_stm32f405xx.o
+.debug_line     0x00000000    0x21a50
+ .debug_line    0x00000000      0xe28 build/debug/main.o
+ .debug_line    0x00000e28      0x623 build/debug/stm32f4xx_hal.o
+ .debug_line    0x0000144b     0x114d build/debug/stm32f4xx_hal_adc.o
+ .debug_line    0x00002598      0x8e6 build/debug/stm32f4xx_hal_cortex.o
+ .debug_line    0x00002e7e      0xeef build/debug/stm32f4xx_hal_dma.o
+ .debug_line    0x00003d6d      0x7b1 build/debug/stm32f4xx_hal_gpio.o
+ .debug_line    0x0000451e     0x5527 build/debug/stm32f4xx_hal_i2c.o
+ .debug_line    0x00009a45      0x998 build/debug/stm32f4xx_hal_msp.o
+ .debug_line    0x0000a3dd     0x1516 build/debug/stm32f4xx_hal_pcd.o
+ .debug_line    0x0000b8f3      0x35c build/debug/stm32f4xx_hal_pcd_ex.o
+ .debug_line    0x0000bc4f      0xc7a build/debug/stm32f4xx_hal_rcc.o
+ .debug_line    0x0000c8c9      0x702 build/debug/stm32f4xx_hal_rcc_ex.o
+ .debug_line    0x0000cfcb     0x1157 build/debug/stm32f4xx_hal_rtc.o
+ .debug_line    0x0000e122     0x252d build/debug/stm32f4xx_hal_spi.o
+ .debug_line    0x0001064f     0x481b build/debug/stm32f4xx_hal_tim.o
+ .debug_line    0x00014e6a     0x1b73 build/debug/stm32f4xx_hal_tim_ex.o
+ .debug_line    0x000169dd     0x35cc build/debug/stm32f4xx_hal_uart.o
+ .debug_line    0x00019fa9      0x37c build/debug/stm32f4xx_it.o
+ .debug_line    0x0001a325     0x2027 build/debug/stm32f4xx_ll_usb.o
+ .debug_line    0x0001c34c      0x30a build/debug/system_stm32f4xx.o
+ .debug_line    0x0001c656      0x2d9 build/debug/usb_device.o
+ .debug_line    0x0001c92f      0x8d6 build/debug/usbd_conf.o
+ .debug_line    0x0001d205      0xaaf build/debug/usbd_core.o
+ .debug_line    0x0001dcb4      0xdd5 build/debug/usbd_ctlreq.o
+ .debug_line    0x0001ea89      0x3f0 build/debug/usbd_desc.o
+ .debug_line    0x0001ee79      0x372 build/debug/usbd_ioreq.o
+ .debug_line    0x0001f1eb      0x732 build/debug/usbd_msc.o
+ .debug_line    0x0001f91d      0x68f build/debug/usbd_msc_bot.o
+ .debug_line    0x0001ffac      0x226 build/debug/usbd_msc_data.o
+ .debug_line    0x000201d2     0x14e5 build/debug/usbd_msc_scsi.o
+ .debug_line    0x000216b7      0x323 build/debug/usbd_storage_if.o
+ .debug_line    0x000219da       0x76 build/debug/startup_stm32f405xx.o
 
-.debug_str      0x00000000     0x7e66
- .debug_str     0x00000000     0x7e66 build/debug/main.o
-                               0x1ca3 (size before relaxing)
- .debug_str     0x00007e66      0xb33 build/debug/stm32f4xx_hal.o
- .debug_str     0x00007e66      0x952 build/debug/stm32f4xx_hal_adc.o
- .debug_str     0x00007e66      0xc44 build/debug/stm32f4xx_hal_cortex.o
- .debug_str     0x00007e66      0x766 build/debug/stm32f4xx_hal_dma.o
- .debug_str     0x00007e66      0x4d0 build/debug/stm32f4xx_hal_gpio.o
- .debug_str     0x00007e66     0x102d build/debug/stm32f4xx_hal_i2c.o
- .debug_str     0x00007e66     0x13e6 build/debug/stm32f4xx_hal_msp.o
- .debug_str     0x00007e66      0xdf5 build/debug/stm32f4xx_hal_pcd.o
- .debug_str     0x00007e66      0x733 build/debug/stm32f4xx_hal_pcd_ex.o
- .debug_str     0x00007e66      0x6f6 build/debug/stm32f4xx_hal_rcc.o
- .debug_str     0x00007e66      0x4b7 build/debug/stm32f4xx_hal_rcc_ex.o
- .debug_str     0x00007e66      0x7d4 build/debug/stm32f4xx_hal_rtc.o
- .debug_str     0x00007e66      0xbe4 build/debug/stm32f4xx_hal_spi.o
- .debug_str     0x00007e66     0x16ef build/debug/stm32f4xx_hal_tim.o
- .debug_str     0x00007e66      0xefb build/debug/stm32f4xx_hal_tim_ex.o
- .debug_str     0x00007e66      0xd8b build/debug/stm32f4xx_hal_uart.o
- .debug_str     0x00007e66      0x891 build/debug/stm32f4xx_it.o
- .debug_str     0x00007e66      0xd1e build/debug/stm32f4xx_ll_usb.o
- .debug_str     0x00007e66      0x365 build/debug/system_stm32f4xx.o
- .debug_str     0x00007e66      0x6e9 build/debug/usb_device.o
- .debug_str     0x00007e66     0x15ab build/debug/usbd_conf.o
- .debug_str     0x00007e66      0x9cf build/debug/usbd_core.o
- .debug_str     0x00007e66      0x7fa build/debug/usbd_ctlreq.o
- .debug_str     0x00007e66      0x44e build/debug/usbd_desc.o
- .debug_str     0x00007e66      0x6cf build/debug/usbd_ioreq.o
- .debug_str     0x00007e66      0xa90 build/debug/usbd_msc.o
- .debug_str     0x00007e66      0x964 build/debug/usbd_msc_bot.o
- .debug_str     0x00007e66      0x237 build/debug/usbd_msc_data.o
- .debug_str     0x00007e66      0xae0 build/debug/usbd_msc_scsi.o
- .debug_str     0x00007e66      0x353 build/debug/usbd_storage_if.o
- .debug_str     0x00007e66       0x6e build/debug/startup_stm32f405xx.o
+.debug_str      0x00000000     0x8016
+ .debug_str     0x00000000     0x8016 build/debug/main.o
+                               0x1e59 (size before relaxing)
+ .debug_str     0x00008016      0xb33 build/debug/stm32f4xx_hal.o
+ .debug_str     0x00008016      0x952 build/debug/stm32f4xx_hal_adc.o
+ .debug_str     0x00008016      0xc44 build/debug/stm32f4xx_hal_cortex.o
+ .debug_str     0x00008016      0x766 build/debug/stm32f4xx_hal_dma.o
+ .debug_str     0x00008016      0x4d0 build/debug/stm32f4xx_hal_gpio.o
+ .debug_str     0x00008016     0x102d build/debug/stm32f4xx_hal_i2c.o
+ .debug_str     0x00008016     0x13e6 build/debug/stm32f4xx_hal_msp.o
+ .debug_str     0x00008016      0xdf5 build/debug/stm32f4xx_hal_pcd.o
+ .debug_str     0x00008016      0x733 build/debug/stm32f4xx_hal_pcd_ex.o
+ .debug_str     0x00008016      0x6f6 build/debug/stm32f4xx_hal_rcc.o
+ .debug_str     0x00008016      0x4b7 build/debug/stm32f4xx_hal_rcc_ex.o
+ .debug_str     0x00008016      0x7d4 build/debug/stm32f4xx_hal_rtc.o
+ .debug_str     0x00008016      0xbe4 build/debug/stm32f4xx_hal_spi.o
+ .debug_str     0x00008016     0x16ef build/debug/stm32f4xx_hal_tim.o
+ .debug_str     0x00008016      0xefb build/debug/stm32f4xx_hal_tim_ex.o
+ .debug_str     0x00008016      0xd8b build/debug/stm32f4xx_hal_uart.o
+ .debug_str     0x00008016      0x891 build/debug/stm32f4xx_it.o
+ .debug_str     0x00008016      0xd1e build/debug/stm32f4xx_ll_usb.o
+ .debug_str     0x00008016      0x365 build/debug/system_stm32f4xx.o
+ .debug_str     0x00008016      0x6e9 build/debug/usb_device.o
+ .debug_str     0x00008016     0x15ab build/debug/usbd_conf.o
+ .debug_str     0x00008016      0x9cf build/debug/usbd_core.o
+ .debug_str     0x00008016      0x7fa build/debug/usbd_ctlreq.o
+ .debug_str     0x00008016      0x44e build/debug/usbd_desc.o
+ .debug_str     0x00008016      0x6cf build/debug/usbd_ioreq.o
+ .debug_str     0x00008016      0xa90 build/debug/usbd_msc.o
+ .debug_str     0x00008016      0x964 build/debug/usbd_msc_bot.o
+ .debug_str     0x00008016      0x237 build/debug/usbd_msc_data.o
+ .debug_str     0x00008016      0xae0 build/debug/usbd_msc_scsi.o
+ .debug_str     0x00008016      0x353 build/debug/usbd_storage_if.o
+ .debug_str     0x00008016       0x6e build/debug/startup_stm32f405xx.o
 
 .debug_frame    0x00000000     0x4c94
  .debug_frame   0x00000000      0x210 build/debug/main.o
@@ -4897,6 +4988,20 @@ FPU_IRQHandler                                    build/debug/startup_stm32f405x
 FSMC_IRQHandler                                   build/debug/startup_stm32f405xx.o
 FS_Desc                                           build/debug/usbd_desc.o
                                                   build/debug/usb_device.o
+GNSS_Checksum                                     build/debug/GNSS.o
+GNSS_GetNavigatorData                             build/debug/GNSS.o
+GNSS_GetPOSLLHData                                build/debug/GNSS.o
+GNSS_GetPVTData                                   build/debug/GNSS.o
+GNSS_GetUniqID                                    build/debug/GNSS.o
+GNSS_Handle                                       build/debug/GNSS.o
+GNSS_Init                                         build/debug/GNSS.o
+GNSS_LoadConfig                                   build/debug/GNSS.o
+GNSS_ParseBuffer                                  build/debug/GNSS.o
+GNSS_ParseNavigatorData                           build/debug/GNSS.o
+GNSS_ParsePOSLLHData                              build/debug/GNSS.o
+GNSS_ParsePVTData                                 build/debug/GNSS.o
+GNSS_ParseUniqID                                  build/debug/GNSS.o
+GNSS_SetMode                                      build/debug/GNSS.o
 Get_Vbat                                          build/debug/main.o
 HAL_ADCEx_InjectedConfigChannel                   build/debug/stm32f4xx_hal_adc_ex.o
 HAL_ADCEx_InjectedConvCpltCallback                build/debug/stm32f4xx_hal_adc_ex.o
@@ -4990,6 +5095,7 @@ HAL_Delay                                         build/debug/stm32f4xx_hal.o
                                                   build/debug/usbd_conf.o
                                                   build/debug/stm32f4xx_ll_usb.o
                                                   build/debug/ee24.o
+                                                  build/debug/GNSS.o
                                                   build/debug/BMP388.o
                                                   build/debug/25flash.o
 HAL_DisableCompensationCell                       build/debug/stm32f4xx_hal.o
@@ -5550,10 +5656,12 @@ HAL_UART_MspInit                                  build/debug/stm32f4xx_hal_msp.
 HAL_UART_Receive                                  build/debug/stm32f4xx_hal_uart.o
 HAL_UART_Receive_DMA                              build/debug/stm32f4xx_hal_uart.o
 HAL_UART_Receive_IT                               build/debug/stm32f4xx_hal_uart.o
+                                                  build/debug/GNSS.o
 HAL_UART_RxCpltCallback                           build/debug/stm32f4xx_hal_uart.o
 HAL_UART_RxHalfCpltCallback                       build/debug/stm32f4xx_hal_uart.o
 HAL_UART_Transmit                                 build/debug/stm32f4xx_hal_uart.o
 HAL_UART_Transmit_DMA                             build/debug/stm32f4xx_hal_uart.o
+                                                  build/debug/GNSS.o
 HAL_UART_Transmit_IT                              build/debug/stm32f4xx_hal_uart.o
 HAL_UART_TxCpltCallback                           build/debug/stm32f4xx_hal_uart.o
 HAL_UART_TxHalfCpltCallback                       build/debug/stm32f4xx_hal_uart.o
@@ -6013,6 +6121,8 @@ __aeabi_cdrcmple                                  /Users/kroko/Library/Applicati
 __aeabi_d2f                                       /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
                                                   build/debug/main.o
                                                   build/debug/BMP388.o
+__aeabi_d2iz                                      /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixdfsi.o)
+                                                  build/debug/GNSS.o
 __aeabi_dadd                                      /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
                                                   /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_sqrt.o)
                                                   /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_scalbn.o)
@@ -6046,6 +6156,7 @@ __aeabi_dmul                                      /Users/kroko/Library/Applicati
                                                   /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-math_err.o)
                                                   /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
                                                   build/debug/main.o
+                                                  build/debug/GNSS.o
                                                   build/debug/BMP388.o
 __aeabi_drsub                                     /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
 __aeabi_dsub                                      /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
@@ -6057,6 +6168,7 @@ __aeabi_f2d                                       /Users/kroko/Library/Applicati
                                                   build/debug/BMP388.o
 __aeabi_i2d                                       /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
                                                   /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
+                                                  build/debug/GNSS.o
 __aeabi_idiv0                                     /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
 __aeabi_l2d                                       /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
 __aeabi_ldiv0                                     /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_dvmd_tls.o)
@@ -6092,6 +6204,7 @@ __errno                                           /Users/kroko/Library/Applicati
 __extendsfdf2                                     /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
 __fini_array_end                                  /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-fini.o)
 __fini_array_start                                /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libc_nano.a(libc_a-fini.o)
+__fixdfsi                                         /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixdfsi.o)
 __floatdidf                                       /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
 __floatsidf                                       /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
 __floatundidf                                     /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
@@ -6308,6 +6421,8 @@ htim3                                             build/debug/main.o
 htim4                                             build/debug/main.o
 htim5                                             build/debug/main.o
 huart1                                            build/debug/main.o
+iLong                                             build/debug/GNSS.o
+iShort                                            build/debug/GNSS.o
 initialise_monitor_handles                        build/debug/syscalls.o
 lsm6dso_4d_mode_get                               build/debug/lsm6dso_reg.o
 lsm6dso_4d_mode_set                               build/debug/lsm6dso_reg.o
@@ -6722,6 +6837,8 @@ pow                                               /Users/kroko/Library/Applicati
 scalbn                                            /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-s_scalbn.o)
                                                   /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(libm_a-e_pow.o)
 software_init_hook                                /Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xpack-dev-tools/arm-none-eabi-gcc/13.3.1-1.1.1/.content/bin/../lib/gcc/arm-none-eabi/13.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/crt0.o
+uLong                                             build/debug/GNSS.o
+uShort                                            build/debug/GNSS.o
 uwTick                                            build/debug/stm32f4xx_hal.o
 uwTickFreq                                        build/debug/stm32f4xx_hal.o
 uwTickPrio                                        build/debug/stm32f4xx_hal.o

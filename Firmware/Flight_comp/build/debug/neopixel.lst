@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 1
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 1
   45 0000 1723     		movs	r3, #23
   46              	.LBE3:
   47              	.LBE2:
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 2
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s 			page 2
 
 
    8:Core/Src/neopixel.c ****     for (uint8_t i = 0; i < NUM_PX; i++)
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 1
   82              		.loc 1 19 19 is_stmt 0 view .LVU22
   83 001c 1E22     		movs	r2, #30
   84 001e 0A60     		str	r2, [r1]
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 3
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s 			page 3
 
 
   85 0020 F3E7     		b	.L3
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 1
  129              		.cfi_def_cfa_offset 0
  130 0018 7047     		bx	lr
  131              	.L11:
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 4
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s 			page 4
 
 
  132 001a 00BF     		.align	2
@@ -238,28 +238,28 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 1
  184              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h"
  185              		.file 5 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
  186              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 5
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s 			page 5
 
 
  187              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h"
  188              		.file 8 "Core/Inc/neopixel.h"
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s 			page 6
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s 			page 6
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 neopixel.c
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:21     .text.LED_Update:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:27     .text.LED_Update:00000000 LED_Update
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:89     .text.LED_Update:00000024 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:171    .bss.dmaBuffer:00000000 dmaBuffer
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:178    .bss.pixel:00000000 pixel
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:97     .text.LED_Set_Color:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:103    .text.LED_Set_Color:00000000 LED_Set_Color
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:134    .text.LED_Set_Color:0000001c $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:139    .text.HAL_TIM_PWM_PulseFinishedCallback:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:145    .text.HAL_TIM_PWM_PulseFinishedCallback:00000000 HAL_TIM_PWM_PulseFinishedCallback
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:168    .bss.dmaBuffer:00000000 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc7uI0Y7.s:175    .bss.pixel:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:21     .text.LED_Update:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:27     .text.LED_Update:00000000 LED_Update
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:89     .text.LED_Update:00000024 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:171    .bss.dmaBuffer:00000000 dmaBuffer
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:178    .bss.pixel:00000000 pixel
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:97     .text.LED_Set_Color:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:103    .text.LED_Set_Color:00000000 LED_Set_Color
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:134    .text.LED_Set_Color:0000001c $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:139    .text.HAL_TIM_PWM_PulseFinishedCallback:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:145    .text.HAL_TIM_PWM_PulseFinishedCallback:00000000 HAL_TIM_PWM_PulseFinishedCallback
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:168    .bss.dmaBuffer:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccOmmrdn.s:175    .bss.pixel:00000000 $d
 
 UNDEFINED SYMBOLS
 HAL_TIM_PWM_Stop_DMA

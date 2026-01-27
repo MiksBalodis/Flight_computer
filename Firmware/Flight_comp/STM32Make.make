@@ -77,6 +77,7 @@ endif
 C_SOURCES =  \
 Core/Src/25flash.c \
 Core/Src/BMP388.c \
+Core/Src/GNSS.c \
 Core/Src/ee24.c \
 Core/Src/lsm6dso.c \
 Core/Src/lsm6dso_reg.c \
