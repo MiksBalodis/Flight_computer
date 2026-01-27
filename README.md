@@ -91,7 +91,7 @@ Sistēma sastāv no trim galvenajiem blokiem:
 - **MAX-M10S** – GNSS modulis augstas precizitātes pozīcijai
 
 #### Datu uzglabāšana
-- **W25Q32JV** – lidojuma datu ierakstīšanai (USB Mass Storage režīms)
+- **MXL1606** – lidojuma datu ierakstīšanai (USB Mass Storage režīms)
 - **24LC64 EEPROM** – konfigurācijas datiem
 
 #### Telemetrija
