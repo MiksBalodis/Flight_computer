@@ -28,6 +28,7 @@
 #include "lsm6dso.h"
 #include "BMP388.h"
 #include "ee24.h"
+#include "servo.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
