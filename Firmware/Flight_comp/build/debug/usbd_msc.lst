@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -58,7 +58,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
   27:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   *             - Bulk-Only Transport protocol
   28:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   *             - Subclass : SCSI transparent command set (ref. SCSI Primary Commands - 3 (SPC-3))
   29:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   *
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 2
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 2
 
 
   30:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   *  @endverbatim
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
   84:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** uint8_t USBD_MSC_DeInit(USBD_HandleTypeDef *pdev, uint8_t cfgidx);
   85:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** uint8_t USBD_MSC_Setup(USBD_HandleTypeDef *pdev, USBD_SetupReqTypedef *req);
   86:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** uint8_t USBD_MSC_DataIn(USBD_HandleTypeDef *pdev, uint8_t epnum);
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 3
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 3
 
 
   87:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** uint8_t USBD_MSC_DataOut(USBD_HandleTypeDef *pdev, uint8_t epnum);
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  141:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   0x01,                                            /* bNumInterfaces: 1 interface */
  142:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   0x01,                                            /* bConfigurationValue */
  143:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   0x04,                                            /* iConfiguration */
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 4
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 4
 
 
  144:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** #if (USBD_SELF_POWERED == 1U)
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  198:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** /**
  199:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   * @}
  200:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   */
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 5
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 5
 
 
  201:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** 
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  255:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   }
  256:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** 
  257:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   /* Init the BOT  layer */
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 6
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 6
 
 
  258:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   MSC_BOT_Init(pdev);
@@ -358,7 +358,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  312:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   uint32_t max_lun;
  313:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   uint16_t status_info = 0U;
  314:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** 
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 7
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 7
 
 
  315:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** #ifdef USE_USBD_COMPOSITE
@@ -418,7 +418,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  369:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****       {
  370:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****         case USB_REQ_GET_STATUS:
  371:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****           if (pdev->dev_state == USBD_STATE_CONFIGURED)
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 8
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 8
 
 
  372:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****           {
@@ -478,7 +478,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  426:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** 
  427:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****     default:
  428:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****       USBD_CtlError(pdev, req);
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 9
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 9
 
 
  429:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****       ret = USBD_FAIL;
@@ -538,7 +538,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  483:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   }
  484:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** 
  485:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   *length = (uint16_t)sizeof(USBD_MSC_CfgDesc);
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 10
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 10
 
 
  486:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   return USBD_MSC_CfgDesc;
@@ -598,7 +598,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  540:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   *         return Device Qualifier descriptor
  541:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   * @param  length : pointer data length
  542:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   * @retval pointer to descriptor buffer
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 11
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 11
 
 
  543:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   */
@@ -658,7 +658,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
   75              		.loc 1 217 3 view .LVU9
  219:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** 
   76              		.loc 1 219 3 view .LVU10
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 12
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 12
 
 
  219:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** 
@@ -718,7 +718,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  114 0032 03F00F03 		and	r3, r3, #15
  240:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** 
  115              		.loc 1 240 46 view .LVU28
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 13
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 13
 
 
  116 0036 03EB8303 		add	r3, r3, r3, lsl #2
@@ -778,7 +778,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  157              		.loc 1 224 5 is_stmt 1 view .LVU41
  224:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   }
  158              		.loc 1 224 12 is_stmt 0 view .LVU42
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 14
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 14
 
 
  159 007c 0220     		movs	r0, #2
@@ -838,7 +838,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  201 00be 83F82350 		strb	r5, [r3, #35]
  202 00c2 D0E7     		b	.L8
  203              	.L12:
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 15
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 15
 
 
  204              		.align	2
@@ -898,7 +898,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  285:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   pdev->ep_in[MSCInEpAdd & 0xFU].is_used = 0U;
  251              		.loc 1 285 3 is_stmt 1 view .LVU64
  252 0020 144E     		ldr	r6, .L16+4
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 16
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 16
 
 
  285:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   pdev->ep_in[MSCInEpAdd & 0xFU].is_used = 0U;
@@ -958,7 +958,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  296:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   }
  292              		.loc 1 296 5 is_stmt 1 view .LVU80
  296:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   }
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 17
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 17
 
 
  293              		.loc 1 296 22 is_stmt 0 view .LVU81
@@ -1018,7 +1018,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  341              	.LVL23:
  311:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   uint32_t max_lun;
  342              		.loc 1 311 3 is_stmt 1 view .LVU90
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 18
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 18
 
 
  312:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   uint16_t status_info = 0U;
@@ -1078,7 +1078,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  381              	.LVL26:
  382              	.L22:
  333:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****               ((req->bmRequest & 0x80U) == 0x80U))
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 19
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 19
 
 
  383              		.loc 1 333 11 is_stmt 1 view .LVU107
@@ -1138,7 +1138,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  422 006c 0228     		cmp	r0, #2
  423 006e 28BF     		it	cs
  424 0070 0220     		movcs	r0, #2
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 20
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 20
 
 
  425              	.LVL31:
@@ -1198,7 +1198,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  464 009a 2046     		mov	r0, r4
  465              	.LVL36:
  355:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****             ret = USBD_FAIL;
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 21
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 21
 
 
  466              		.loc 1 355 13 is_stmt 0 view .LVU138
@@ -1258,7 +1258,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  509 00cc 0326     		movs	r6, #3
  510 00ce 36E0     		b	.L19
  511              	.LVL40:
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 22
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 22
 
 
  512              	.L40:
@@ -1318,7 +1318,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  552              	.LVL48:
  553              	.L28:
  395:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****           {
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 23
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 23
 
 
  554              		.loc 1 395 11 is_stmt 1 view .LVU164
@@ -1378,7 +1378,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  592              	.LVL51:
  412:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** 
  593              		.loc 1 412 21 view .LVU181
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 24
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 24
 
 
  594 0122 FFF7FEFF 		bl	USBD_LL_FlushEP
@@ -1438,7 +1438,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  636 0148 F9E7     		b	.L19
  637              		.cfi_endproc
  638              	.LFE245:
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 25
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 25
 
 
  640              		.section	.text.USBD_MSC_DataIn,"ax",%progbits
@@ -1498,7 +1498,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  689 0002 FFF7FEFF 		bl	MSC_BOT_DataOut
  690              	.LVL63:
  461:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c **** }
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 26
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 26
 
 
  691              		.loc 1 461 3 view .LVU202
@@ -1558,7 +1558,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  738              	.LVL69:
  475:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   {
  739              		.loc 1 475 3 is_stmt 1 view .LVU212
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 27
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 27
 
 
  475:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   {
@@ -1618,7 +1618,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  782              		.thumb
  783              		.thumb_func
  785              	USBD_MSC_GetFSCfgDesc:
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 28
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 28
 
 
  786              	.LVL72:
@@ -1678,7 +1678,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  828              	.L53:
  505:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   {
  829              		.loc 1 505 3 is_stmt 1 view .LVU238
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 29
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 29
 
 
  505:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   {
@@ -1738,7 +1738,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  875              		.cfi_offset 4, -16
  876              		.cfi_offset 5, -12
  877              		.cfi_offset 6, -8
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 30
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 30
 
 
  878              		.cfi_offset 14, -4
@@ -1798,7 +1798,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  918              	.L60:
  535:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   return USBD_MSC_CfgDesc;
  919              		.loc 1 535 3 is_stmt 1 view .LVU264
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 31
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 31
 
 
  535:Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Src/usbd_msc.c ****   return USBD_MSC_CfgDesc;
@@ -1858,7 +1858,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  957              		.loc 1 563 23 is_stmt 0 view .LVU274
  958 0002 D0F8D432 		ldr	r3, [r0, #724]
  959              		.loc 1 563 34 view .LVU275
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 32
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 32
 
 
  960 0006 B033     		adds	r3, r3, #176
@@ -1918,7 +1918,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  1013 0008 00000000 		.word	USBD_MSC_Setup
  1014 000c 00000000 		.word	0
  1015 0010 00000000 		.word	0
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 33
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 33
 
 
  1016 0014 00000000 		.word	USBD_MSC_DataIn
@@ -1942,47 +1942,47 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 1
  1034              		.file 9 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h"
  1035              		.file 10 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h"
  1036              		.file 11 "USB_DEVICE/Target/usbd_conf.h"
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s 			page 34
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s 			page 34
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usbd_msc.c
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:21     .text.USBD_MSC_GetDeviceQualifierDescriptor:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:27     .text.USBD_MSC_GetDeviceQualifierDescriptor:00000000 USBD_MSC_GetDeviceQualifierDescriptor
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:48     .text.USBD_MSC_GetDeviceQualifierDescriptor:00000008 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:995    .data.USBD_MSC_DeviceQualifierDesc:00000000 USBD_MSC_DeviceQualifierDesc
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:53     .text.USBD_MSC_Init:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:59     .text.USBD_MSC_Init:00000000 USBD_MSC_Init
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:206    .text.USBD_MSC_Init:000000c4 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:983    .data.MSCOutEpAdd:00000000 MSCOutEpAdd
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:989    .data.MSCInEpAdd:00000000 MSCInEpAdd
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:212    .text.USBD_MSC_DeInit:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:218    .text.USBD_MSC_DeInit:00000000 USBD_MSC_DeInit
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:305    .text.USBD_MSC_DeInit:00000070 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:311    .text.USBD_MSC_Setup:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:317    .text.USBD_MSC_Setup:00000000 USBD_MSC_Setup
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:483    .text.USBD_MSC_Setup:000000b2 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:495    .text.USBD_MSC_Setup:000000be $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:641    .text.USBD_MSC_DataIn:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:647    .text.USBD_MSC_DataIn:00000000 USBD_MSC_DataIn
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:670    .text.USBD_MSC_DataOut:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:676    .text.USBD_MSC_DataOut:00000000 USBD_MSC_DataOut
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:699    .text.USBD_MSC_GetHSCfgDesc:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:705    .text.USBD_MSC_GetHSCfgDesc:00000000 USBD_MSC_GetHSCfgDesc
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:774    .text.USBD_MSC_GetHSCfgDesc:00000034 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:1001   .data.USBD_MSC_CfgDesc:00000000 USBD_MSC_CfgDesc
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:779    .text.USBD_MSC_GetFSCfgDesc:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:785    .text.USBD_MSC_GetFSCfgDesc:00000000 USBD_MSC_GetFSCfgDesc
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:854    .text.USBD_MSC_GetFSCfgDesc:00000034 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:859    .text.USBD_MSC_GetOtherSpeedCfgDesc:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:865    .text.USBD_MSC_GetOtherSpeedCfgDesc:00000000 USBD_MSC_GetOtherSpeedCfgDesc
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:934    .text.USBD_MSC_GetOtherSpeedCfgDesc:00000034 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:939    .text.USBD_MSC_RegisterStorage:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:945    .text.USBD_MSC_RegisterStorage:00000000 USBD_MSC_RegisterStorage
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:992    .data.USBD_MSC_DeviceQualifierDesc:00000000 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:998    .data.USBD_MSC_CfgDesc:00000000 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:1010   .data.USBD_MSC:00000000 USBD_MSC
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cc9DpykF.s:1007   .data.USBD_MSC:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:21     .text.USBD_MSC_GetDeviceQualifierDescriptor:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:27     .text.USBD_MSC_GetDeviceQualifierDescriptor:00000000 USBD_MSC_GetDeviceQualifierDescriptor
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:48     .text.USBD_MSC_GetDeviceQualifierDescriptor:00000008 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:995    .data.USBD_MSC_DeviceQualifierDesc:00000000 USBD_MSC_DeviceQualifierDesc
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:53     .text.USBD_MSC_Init:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:59     .text.USBD_MSC_Init:00000000 USBD_MSC_Init
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:206    .text.USBD_MSC_Init:000000c4 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:983    .data.MSCOutEpAdd:00000000 MSCOutEpAdd
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:989    .data.MSCInEpAdd:00000000 MSCInEpAdd
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:212    .text.USBD_MSC_DeInit:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:218    .text.USBD_MSC_DeInit:00000000 USBD_MSC_DeInit
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:305    .text.USBD_MSC_DeInit:00000070 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:311    .text.USBD_MSC_Setup:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:317    .text.USBD_MSC_Setup:00000000 USBD_MSC_Setup
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:483    .text.USBD_MSC_Setup:000000b2 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:495    .text.USBD_MSC_Setup:000000be $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:641    .text.USBD_MSC_DataIn:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:647    .text.USBD_MSC_DataIn:00000000 USBD_MSC_DataIn
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:670    .text.USBD_MSC_DataOut:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:676    .text.USBD_MSC_DataOut:00000000 USBD_MSC_DataOut
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:699    .text.USBD_MSC_GetHSCfgDesc:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:705    .text.USBD_MSC_GetHSCfgDesc:00000000 USBD_MSC_GetHSCfgDesc
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:774    .text.USBD_MSC_GetHSCfgDesc:00000034 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:1001   .data.USBD_MSC_CfgDesc:00000000 USBD_MSC_CfgDesc
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:779    .text.USBD_MSC_GetFSCfgDesc:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:785    .text.USBD_MSC_GetFSCfgDesc:00000000 USBD_MSC_GetFSCfgDesc
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:854    .text.USBD_MSC_GetFSCfgDesc:00000034 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:859    .text.USBD_MSC_GetOtherSpeedCfgDesc:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:865    .text.USBD_MSC_GetOtherSpeedCfgDesc:00000000 USBD_MSC_GetOtherSpeedCfgDesc
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:934    .text.USBD_MSC_GetOtherSpeedCfgDesc:00000034 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:939    .text.USBD_MSC_RegisterStorage:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:945    .text.USBD_MSC_RegisterStorage:00000000 USBD_MSC_RegisterStorage
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:992    .data.USBD_MSC_DeviceQualifierDesc:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:998    .data.USBD_MSC_CfgDesc:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:1010   .data.USBD_MSC:00000000 USBD_MSC
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cctBJgGM.s:1007   .data.USBD_MSC:00000000 $d
 
 UNDEFINED SYMBOLS
 USBD_static_malloc

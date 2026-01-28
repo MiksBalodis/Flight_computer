@@ -15,16 +15,19 @@ extern SPI_HandleTypeDef hspi1;
 #define FLASH_CS_LOW()   HAL_GPIO_WritePin(FLASH_CS_PORT, FLASH_CS_PIN, GPIO_PIN_RESET)
 #define FLASH_CS_HIGH()  HAL_GPIO_WritePin(FLASH_CS_PORT, FLASH_CS_PIN, GPIO_PIN_SET)
 
-void FLASH_SPI_Write(uint8_t *data, uint16_t len);
-void FLASH_SPI_Read(uint8_t *data, uint16_t len);
+#define FL_OK    0U
+#define FL_FAIL  1U
 
-void FLASH_Reset(void);
-uint32_t FLASH_ReadID(void);
-uint8_t FLASH_Read(uint32_t address);
-void FLASH_Read_Sector(uint32_t sector, uint8_t *data[4096]);
-void FLASH_Program_Page(uint16_t page, uint8_t data[256]);
-void FLASH_Sector_Erase(uint32_t sector);
-void FLASH_Program_Sector(uint32_t sector, uint8_t data[4096]);
+void MX25FLASH_SPI_Write(uint8_t *data, uint16_t len);
+HAL_StatusTypeDef MX25FLASH_SPI_Read(uint8_t *data, uint16_t len);
 
-void FLASH_WFE(void);
-void FLASH_WE(void);
+void MX25FLASH_Reset(void);
+uint32_t MX25FLASH_ReadID(void);
+uint8_t MX25FLASH_Read(uint32_t address);
+void MX25FLASH_Read_Sector(uint32_t sector, uint8_t *data);
+void MX25FLASH_Program_Page(uint16_t page, uint8_t data[256]);
+uint8_t MX25FLASH_Sector_Erase(uint32_t sector);
+uint8_t MX25FLASH_Program_Sector(uint32_t sector, uint8_t *data);
+
+uint8_t MX25FLASH_WFE(void);
+void MX25FLASH_WE(void);

@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s 			page 1
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -54,20 +54,20 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s 			page 1
   57              		.file 2 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
   58              		.file 3 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
   59              		.file 4 "Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc/usbd_msc_data.h"
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s 			page 2
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s 			page 2
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usbd_msc_data.c
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:25     .bss.MSC_Diagnostic_Data:00000000 MSC_Diagnostic_Data
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:22     .bss.MSC_Diagnostic_Data:00000000 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:32     .data.MSC_Mode_Sense10_data:00000000 MSC_Mode_Sense10_data
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:29     .data.MSC_Mode_Sense10_data:00000000 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:39     .data.MSC_Mode_Sense6_data:00000000 MSC_Mode_Sense6_data
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:36     .data.MSC_Mode_Sense6_data:00000000 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:46     .data.MSC_Page80_Inquiry_Data:00000000 MSC_Page80_Inquiry_Data
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:43     .data.MSC_Page80_Inquiry_Data:00000000 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:53     .data.MSC_Page00_Inquiry_Data:00000000 MSC_Page00_Inquiry_Data
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cchoYeu7.s:50     .data.MSC_Page00_Inquiry_Data:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:25     .bss.MSC_Diagnostic_Data:00000000 MSC_Diagnostic_Data
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:22     .bss.MSC_Diagnostic_Data:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:32     .data.MSC_Mode_Sense10_data:00000000 MSC_Mode_Sense10_data
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:29     .data.MSC_Mode_Sense10_data:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:39     .data.MSC_Mode_Sense6_data:00000000 MSC_Mode_Sense6_data
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:36     .data.MSC_Mode_Sense6_data:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:46     .data.MSC_Page80_Inquiry_Data:00000000 MSC_Page80_Inquiry_Data
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:43     .data.MSC_Page80_Inquiry_Data:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:53     .data.MSC_Page00_Inquiry_Data:00000000 MSC_Page00_Inquiry_Data
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//cceU3FIg.s:50     .data.MSC_Page00_Inquiry_Data:00000000 $d
 
 NO UNDEFINED SYMBOLS

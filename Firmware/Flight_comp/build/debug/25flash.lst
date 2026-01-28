@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 1
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -20,23 +20,23 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 1
   17              	.Ltext0:
   18              		.cfi_sections	.debug_frame
   19              		.file 1 "Core/Src/25flash.c"
-  20              		.section	.text.FLASH_SPI_Write,"ax",%progbits
+  20              		.section	.text.MX25FLASH_SPI_Write,"ax",%progbits
   21              		.align	1
-  22              		.global	FLASH_SPI_Write
+  22              		.global	MX25FLASH_SPI_Write
   23              		.syntax unified
   24              		.thumb
   25              		.thumb_func
-  27              	FLASH_SPI_Write:
+  27              	MX25FLASH_SPI_Write:
   28              	.LVL0:
   29              	.LFB239:
    1:Core/Src/25flash.c **** #include "25flash.h"
    2:Core/Src/25flash.c **** 
-   3:Core/Src/25flash.c **** void FLASH_SPI_Write (uint8_t *data, uint16_t len){
-  30              		.loc 1 3 51 view -0
+   3:Core/Src/25flash.c **** void MX25FLASH_SPI_Write (uint8_t *data, uint16_t len){
+  30              		.loc 1 3 55 view -0
   31              		.cfi_startproc
   32              		@ args = 0, pretend = 0, frame = 0
   33              		@ frame_needed = 0, uses_anonymous_args = 0
-  34              		.loc 1 3 51 is_stmt 0 view .LVU1
+  34              		.loc 1 3 55 is_stmt 0 view .LVU1
   35 0000 08B5     		push	{r3, lr}
   36              		.cfi_def_cfa_offset 8
   37              		.cfi_offset 3, -8
@@ -58,321 +58,322 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 1
   51 0010 08BD     		pop	{r3, pc}
   52              	.L4:
   53 0012 00BF     		.align	2
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 2
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 2
 
 
   54              	.L3:
   55 0014 00000000 		.word	hspi1
   56              		.cfi_endproc
   57              	.LFE239:
-  59              		.section	.text.FLASH_SPI_Read,"ax",%progbits
+  59              		.section	.text.MX25FLASH_SPI_Read,"ax",%progbits
   60              		.align	1
-  61              		.global	FLASH_SPI_Read
+  61              		.global	MX25FLASH_SPI_Read
   62              		.syntax unified
   63              		.thumb
   64              		.thumb_func
-  66              	FLASH_SPI_Read:
+  66              	MX25FLASH_SPI_Read:
   67              	.LVL4:
   68              	.LFB240:
    6:Core/Src/25flash.c **** 
-   7:Core/Src/25flash.c **** void FLASH_SPI_Read (uint8_t *data, uint16_t len){
-  69              		.loc 1 7 50 is_stmt 1 view -0
+   7:Core/Src/25flash.c **** HAL_StatusTypeDef MX25FLASH_SPI_Read (uint8_t *data, uint16_t len){
+  69              		.loc 1 7 67 is_stmt 1 view -0
   70              		.cfi_startproc
   71              		@ args = 0, pretend = 0, frame = 0
   72              		@ frame_needed = 0, uses_anonymous_args = 0
-  73              		.loc 1 7 50 is_stmt 0 view .LVU7
+  73              		.loc 1 7 67 is_stmt 0 view .LVU7
   74 0000 08B5     		push	{r3, lr}
   75              		.cfi_def_cfa_offset 8
   76              		.cfi_offset 3, -8
   77              		.cfi_offset 14, -4
   78 0002 0A46     		mov	r2, r1
-   8:Core/Src/25flash.c **** 	HAL_SPI_Receive(&FLASH_SPI, data, len, 5000);
+   8:Core/Src/25flash.c **** 	return HAL_SPI_Receive(&FLASH_SPI, data, len, 5000);
   79              		.loc 1 8 2 is_stmt 1 view .LVU8
-  80 0004 41F28833 		movw	r3, #5000
-  81 0008 0146     		mov	r1, r0
-  82              	.LVL5:
-  83              		.loc 1 8 2 is_stmt 0 view .LVU9
-  84 000a 0248     		ldr	r0, .L7
-  85              	.LVL6:
-  86              		.loc 1 8 2 view .LVU10
-  87 000c FFF7FEFF 		bl	HAL_SPI_Receive
-  88              	.LVL7:
+  80              		.loc 1 8 9 is_stmt 0 view .LVU9
+  81 0004 41F28833 		movw	r3, #5000
+  82 0008 0146     		mov	r1, r0
+  83              	.LVL5:
+  84              		.loc 1 8 9 view .LVU10
+  85 000a 0248     		ldr	r0, .L7
+  86              	.LVL6:
+  87              		.loc 1 8 9 view .LVU11
+  88 000c FFF7FEFF 		bl	HAL_SPI_Receive
+  89              	.LVL7:
    9:Core/Src/25flash.c **** }
-  89              		.loc 1 9 1 view .LVU11
-  90 0010 08BD     		pop	{r3, pc}
-  91              	.L8:
-  92 0012 00BF     		.align	2
-  93              	.L7:
-  94 0014 00000000 		.word	hspi1
-  95              		.cfi_endproc
-  96              	.LFE240:
-  98              		.section	.text.FLASH_Reset,"ax",%progbits
-  99              		.align	1
- 100              		.global	FLASH_Reset
- 101              		.syntax unified
- 102              		.thumb
- 103              		.thumb_func
- 105              	FLASH_Reset:
- 106              	.LFB241:
+  90              		.loc 1 9 1 view .LVU12
+  91 0010 08BD     		pop	{r3, pc}
+  92              	.L8:
+  93 0012 00BF     		.align	2
+  94              	.L7:
+  95 0014 00000000 		.word	hspi1
+  96              		.cfi_endproc
+  97              	.LFE240:
+  99              		.section	.text.MX25FLASH_Reset,"ax",%progbits
+ 100              		.align	1
+ 101              		.global	MX25FLASH_Reset
+ 102              		.syntax unified
+ 103              		.thumb
+ 104              		.thumb_func
+ 106              	MX25FLASH_Reset:
+ 107              	.LFB241:
   10:Core/Src/25flash.c **** 
-  11:Core/Src/25flash.c **** void FLASH_Reset(void){
- 107              		.loc 1 11 23 is_stmt 1 view -0
- 108              		.cfi_startproc
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 3
+  11:Core/Src/25flash.c **** void MX25FLASH_Reset(void){
+ 108              		.loc 1 11 27 is_stmt 1 view -0
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 3
 
 
- 109              		@ args = 0, pretend = 0, frame = 8
- 110              		@ frame_needed = 0, uses_anonymous_args = 0
- 111 0000 10B5     		push	{r4, lr}
- 112              		.cfi_def_cfa_offset 8
- 113              		.cfi_offset 4, -8
- 114              		.cfi_offset 14, -4
- 115 0002 82B0     		sub	sp, sp, #8
- 116              		.cfi_def_cfa_offset 16
+ 109              		.cfi_startproc
+ 110              		@ args = 0, pretend = 0, frame = 8
+ 111              		@ frame_needed = 0, uses_anonymous_args = 0
+ 112 0000 10B5     		push	{r4, lr}
+ 113              		.cfi_def_cfa_offset 8
+ 114              		.cfi_offset 4, -8
+ 115              		.cfi_offset 14, -4
+ 116 0002 82B0     		sub	sp, sp, #8
+ 117              		.cfi_def_cfa_offset 16
   12:Core/Src/25flash.c **** 	uint8_t tData[2];
- 117              		.loc 1 12 2 view .LVU13
+ 118              		.loc 1 12 2 view .LVU14
   13:Core/Src/25flash.c **** 
   14:Core/Src/25flash.c **** 	tData[0] = 0x66;  // enable Reset
- 118              		.loc 1 14 2 view .LVU14
- 119              		.loc 1 14 11 is_stmt 0 view .LVU15
- 120 0004 6623     		movs	r3, #102
- 121 0006 8DF80430 		strb	r3, [sp, #4]
+ 119              		.loc 1 14 2 view .LVU15
+ 120              		.loc 1 14 11 is_stmt 0 view .LVU16
+ 121 0004 6623     		movs	r3, #102
+ 122 0006 8DF80430 		strb	r3, [sp, #4]
   15:Core/Src/25flash.c **** 	tData[1] = 0x99;  // Reset
- 122              		.loc 1 15 2 is_stmt 1 view .LVU16
- 123              		.loc 1 15 11 is_stmt 0 view .LVU17
- 124 000a 9923     		movs	r3, #153
- 125 000c 8DF80530 		strb	r3, [sp, #5]
+ 123              		.loc 1 15 2 is_stmt 1 view .LVU17
+ 124              		.loc 1 15 11 is_stmt 0 view .LVU18
+ 125 000a 9923     		movs	r3, #153
+ 126 000c 8DF80530 		strb	r3, [sp, #5]
   16:Core/Src/25flash.c ****     FLASH_CS_LOW();
- 126              		.loc 1 16 5 is_stmt 1 view .LVU18
- 127 0010 094C     		ldr	r4, .L11
- 128 0012 0022     		movs	r2, #0
- 129 0014 1021     		movs	r1, #16
- 130 0016 2046     		mov	r0, r4
- 131 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 132              	.LVL8:
-  17:Core/Src/25flash.c **** 	FLASH_SPI_Write(tData, 2);
- 133              		.loc 1 17 2 view .LVU19
- 134 001c 0221     		movs	r1, #2
- 135 001e 01A8     		add	r0, sp, #4
- 136 0020 FFF7FEFF 		bl	FLASH_SPI_Write
- 137              	.LVL9:
+ 127              		.loc 1 16 5 is_stmt 1 view .LVU19
+ 128 0010 094C     		ldr	r4, .L11
+ 129 0012 0022     		movs	r2, #0
+ 130 0014 1021     		movs	r1, #16
+ 131 0016 2046     		mov	r0, r4
+ 132 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 133              	.LVL8:
+  17:Core/Src/25flash.c **** 	MX25FLASH_SPI_Write(tData, 2);
+ 134              		.loc 1 17 2 view .LVU20
+ 135 001c 0221     		movs	r1, #2
+ 136 001e 01A8     		add	r0, sp, #4
+ 137 0020 FFF7FEFF 		bl	MX25FLASH_SPI_Write
+ 138              	.LVL9:
   18:Core/Src/25flash.c **** 	FLASH_CS_HIGH(); // pull the HIGH
- 138              		.loc 1 18 2 view .LVU20
- 139 0024 0122     		movs	r2, #1
- 140 0026 1021     		movs	r1, #16
- 141 0028 2046     		mov	r0, r4
- 142 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
- 143              	.LVL10:
+ 139              		.loc 1 18 2 view .LVU21
+ 140 0024 0122     		movs	r2, #1
+ 141 0026 1021     		movs	r1, #16
+ 142 0028 2046     		mov	r0, r4
+ 143 002a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 144              	.LVL10:
   19:Core/Src/25flash.c ****     HAL_Delay(100);
- 144              		.loc 1 19 5 view .LVU21
- 145 002e 6420     		movs	r0, #100
- 146 0030 FFF7FEFF 		bl	HAL_Delay
- 147              	.LVL11:
+ 145              		.loc 1 19 5 view .LVU22
+ 146 002e 6420     		movs	r0, #100
+ 147 0030 FFF7FEFF 		bl	HAL_Delay
+ 148              	.LVL11:
   20:Core/Src/25flash.c **** }
- 148              		.loc 1 20 1 is_stmt 0 view .LVU22
- 149 0034 02B0     		add	sp, sp, #8
- 150              		.cfi_def_cfa_offset 8
- 151              		@ sp needed
- 152 0036 10BD     		pop	{r4, pc}
- 153              	.L12:
- 154              		.align	2
- 155              	.L11:
- 156 0038 00080240 		.word	1073874944
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 4
+ 149              		.loc 1 20 1 is_stmt 0 view .LVU23
+ 150 0034 02B0     		add	sp, sp, #8
+ 151              		.cfi_def_cfa_offset 8
+ 152              		@ sp needed
+ 153 0036 10BD     		pop	{r4, pc}
+ 154              	.L12:
+ 155              		.align	2
+ 156              	.L11:
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 4
 
 
- 157              		.cfi_endproc
- 158              	.LFE241:
- 160              		.section	.text.FLASH_ReadID,"ax",%progbits
- 161              		.align	1
- 162              		.global	FLASH_ReadID
- 163              		.syntax unified
- 164              		.thumb
- 165              		.thumb_func
- 167              	FLASH_ReadID:
- 168              	.LFB242:
+ 157 0038 00080240 		.word	1073874944
+ 158              		.cfi_endproc
+ 159              	.LFE241:
+ 161              		.section	.text.MX25FLASH_ReadID,"ax",%progbits
+ 162              		.align	1
+ 163              		.global	MX25FLASH_ReadID
+ 164              		.syntax unified
+ 165              		.thumb
+ 166              		.thumb_func
+ 168              	MX25FLASH_ReadID:
+ 169              	.LFB242:
   21:Core/Src/25flash.c **** 
-  22:Core/Src/25flash.c **** uint32_t FLASH_ReadID(void){
- 169              		.loc 1 22 28 is_stmt 1 view -0
- 170              		.cfi_startproc
- 171              		@ args = 0, pretend = 0, frame = 8
- 172              		@ frame_needed = 0, uses_anonymous_args = 0
- 173 0000 10B5     		push	{r4, lr}
- 174              		.cfi_def_cfa_offset 8
- 175              		.cfi_offset 4, -8
- 176              		.cfi_offset 14, -4
- 177 0002 82B0     		sub	sp, sp, #8
- 178              		.cfi_def_cfa_offset 16
+  22:Core/Src/25flash.c **** uint32_t MX25FLASH_ReadID(void){
+ 170              		.loc 1 22 32 is_stmt 1 view -0
+ 171              		.cfi_startproc
+ 172              		@ args = 0, pretend = 0, frame = 8
+ 173              		@ frame_needed = 0, uses_anonymous_args = 0
+ 174 0000 10B5     		push	{r4, lr}
+ 175              		.cfi_def_cfa_offset 8
+ 176              		.cfi_offset 4, -8
+ 177              		.cfi_offset 14, -4
+ 178 0002 82B0     		sub	sp, sp, #8
+ 179              		.cfi_def_cfa_offset 16
   23:Core/Src/25flash.c **** 	uint8_t tData = 0x9f;  // Read ID
- 179              		.loc 1 23 2 view .LVU24
- 180              		.loc 1 23 10 is_stmt 0 view .LVU25
- 181 0004 9F23     		movs	r3, #159
- 182 0006 8DF80730 		strb	r3, [sp, #7]
+ 180              		.loc 1 23 2 view .LVU25
+ 181              		.loc 1 23 10 is_stmt 0 view .LVU26
+ 182 0004 9F23     		movs	r3, #159
+ 183 0006 8DF80730 		strb	r3, [sp, #7]
   24:Core/Src/25flash.c **** 	uint8_t rData[3];
- 183              		.loc 1 24 2 is_stmt 1 view .LVU26
+ 184              		.loc 1 24 2 is_stmt 1 view .LVU27
   25:Core/Src/25flash.c **** 	FLASH_CS_LOW();  // pull the CS LOW
- 184              		.loc 1 25 2 view .LVU27
- 185 000a 104C     		ldr	r4, .L15
- 186 000c 0022     		movs	r2, #0
- 187 000e 1021     		movs	r1, #16
- 188 0010 2046     		mov	r0, r4
- 189 0012 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 190              	.LVL12:
-  26:Core/Src/25flash.c **** 	FLASH_SPI_Write(&tData, 1);
- 191              		.loc 1 26 2 view .LVU28
- 192 0016 0121     		movs	r1, #1
- 193 0018 0DF10700 		add	r0, sp, #7
- 194 001c FFF7FEFF 		bl	FLASH_SPI_Write
- 195              	.LVL13:
-  27:Core/Src/25flash.c **** 	FLASH_SPI_Read(rData, 3);
- 196              		.loc 1 27 2 view .LVU29
- 197 0020 0321     		movs	r1, #3
- 198 0022 01A8     		add	r0, sp, #4
- 199 0024 FFF7FEFF 		bl	FLASH_SPI_Read
- 200              	.LVL14:
+ 185              		.loc 1 25 2 view .LVU28
+ 186 000a 104C     		ldr	r4, .L15
+ 187 000c 0022     		movs	r2, #0
+ 188 000e 1021     		movs	r1, #16
+ 189 0010 2046     		mov	r0, r4
+ 190 0012 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 191              	.LVL12:
+  26:Core/Src/25flash.c **** 	MX25FLASH_SPI_Write(&tData, 1);
+ 192              		.loc 1 26 2 view .LVU29
+ 193 0016 0121     		movs	r1, #1
+ 194 0018 0DF10700 		add	r0, sp, #7
+ 195 001c FFF7FEFF 		bl	MX25FLASH_SPI_Write
+ 196              	.LVL13:
+  27:Core/Src/25flash.c **** 	MX25FLASH_SPI_Read(rData, 3);
+ 197              		.loc 1 27 2 view .LVU30
+ 198 0020 0321     		movs	r1, #3
+ 199 0022 01A8     		add	r0, sp, #4
+ 200 0024 FFF7FEFF 		bl	MX25FLASH_SPI_Read
+ 201              	.LVL14:
   28:Core/Src/25flash.c **** 	FLASH_CS_HIGH();  // pull the HIGH
- 201              		.loc 1 28 2 view .LVU30
- 202 0028 0122     		movs	r2, #1
- 203 002a 1021     		movs	r1, #16
- 204 002c 2046     		mov	r0, r4
- 205 002e FFF7FEFF 		bl	HAL_GPIO_WritePin
- 206              	.LVL15:
+ 202              		.loc 1 28 2 view .LVU31
+ 203 0028 0122     		movs	r2, #1
+ 204 002a 1021     		movs	r1, #16
+ 205 002c 2046     		mov	r0, r4
+ 206 002e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 207              	.LVL15:
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 5
+
+
   29:Core/Src/25flash.c **** 	return ((rData[0]<<16)|(rData[1]<<8)|rData[2]); // MFN ID : MEM ID : CAPACITY ID
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 5
-
-
- 207              		.loc 1 29 2 view .LVU31
- 208              		.loc 1 29 16 is_stmt 0 view .LVU32
- 209 0032 9DF80420 		ldrb	r2, [sp, #4]	@ zero_extendqisi2
- 210              		.loc 1 29 31 view .LVU33
- 211 0036 9DF80530 		ldrb	r3, [sp, #5]	@ zero_extendqisi2
- 212              		.loc 1 29 34 view .LVU34
- 213 003a 1B02     		lsls	r3, r3, #8
- 214              		.loc 1 29 24 view .LVU35
- 215 003c 43EA0243 		orr	r3, r3, r2, lsl #16
- 216              		.loc 1 29 44 view .LVU36
- 217 0040 9DF80600 		ldrb	r0, [sp, #6]	@ zero_extendqisi2
+ 208              		.loc 1 29 2 view .LVU32
+ 209              		.loc 1 29 16 is_stmt 0 view .LVU33
+ 210 0032 9DF80420 		ldrb	r2, [sp, #4]	@ zero_extendqisi2
+ 211              		.loc 1 29 31 view .LVU34
+ 212 0036 9DF80530 		ldrb	r3, [sp, #5]	@ zero_extendqisi2
+ 213              		.loc 1 29 34 view .LVU35
+ 214 003a 1B02     		lsls	r3, r3, #8
+ 215              		.loc 1 29 24 view .LVU36
+ 216 003c 43EA0243 		orr	r3, r3, r2, lsl #16
+ 217              		.loc 1 29 44 view .LVU37
+ 218 0040 9DF80600 		ldrb	r0, [sp, #6]	@ zero_extendqisi2
   30:Core/Src/25flash.c **** }
- 218              		.loc 1 30 1 view .LVU37
- 219 0044 1843     		orrs	r0, r0, r3
- 220 0046 02B0     		add	sp, sp, #8
- 221              		.cfi_def_cfa_offset 8
- 222              		@ sp needed
- 223 0048 10BD     		pop	{r4, pc}
- 224              	.L16:
- 225 004a 00BF     		.align	2
- 226              	.L15:
- 227 004c 00080240 		.word	1073874944
- 228              		.cfi_endproc
- 229              	.LFE242:
- 231              		.section	.text.FLASH_Read,"ax",%progbits
- 232              		.align	1
- 233              		.global	FLASH_Read
- 234              		.syntax unified
- 235              		.thumb
- 236              		.thumb_func
- 238              	FLASH_Read:
- 239              	.LVL16:
- 240              	.LFB243:
+ 219              		.loc 1 30 1 view .LVU38
+ 220 0044 1843     		orrs	r0, r0, r3
+ 221 0046 02B0     		add	sp, sp, #8
+ 222              		.cfi_def_cfa_offset 8
+ 223              		@ sp needed
+ 224 0048 10BD     		pop	{r4, pc}
+ 225              	.L16:
+ 226 004a 00BF     		.align	2
+ 227              	.L15:
+ 228 004c 00080240 		.word	1073874944
+ 229              		.cfi_endproc
+ 230              	.LFE242:
+ 232              		.section	.text.MX25FLASH_Read,"ax",%progbits
+ 233              		.align	1
+ 234              		.global	MX25FLASH_Read
+ 235              		.syntax unified
+ 236              		.thumb
+ 237              		.thumb_func
+ 239              	MX25FLASH_Read:
+ 240              	.LVL16:
+ 241              	.LFB243:
   31:Core/Src/25flash.c **** 
-  32:Core/Src/25flash.c **** uint8_t FLASH_Read(uint32_t address){
- 241              		.loc 1 32 37 is_stmt 1 view -0
- 242              		.cfi_startproc
- 243              		@ args = 0, pretend = 0, frame = 8
- 244              		@ frame_needed = 0, uses_anonymous_args = 0
- 245              		.loc 1 32 37 is_stmt 0 view .LVU39
- 246 0000 10B5     		push	{r4, lr}
- 247              		.cfi_def_cfa_offset 8
- 248              		.cfi_offset 4, -8
- 249              		.cfi_offset 14, -4
- 250 0002 82B0     		sub	sp, sp, #8
- 251              		.cfi_def_cfa_offset 16
+  32:Core/Src/25flash.c **** uint8_t MX25FLASH_Read(uint32_t address){
+ 242              		.loc 1 32 41 is_stmt 1 view -0
+ 243              		.cfi_startproc
+ 244              		@ args = 0, pretend = 0, frame = 8
+ 245              		@ frame_needed = 0, uses_anonymous_args = 0
+ 246              		.loc 1 32 41 is_stmt 0 view .LVU40
+ 247 0000 10B5     		push	{r4, lr}
+ 248              		.cfi_def_cfa_offset 8
+ 249              		.cfi_offset 4, -8
+ 250              		.cfi_offset 14, -4
+ 251 0002 82B0     		sub	sp, sp, #8
+ 252              		.cfi_def_cfa_offset 16
   33:Core/Src/25flash.c ****     uint8_t tData[4];
- 252              		.loc 1 33 5 is_stmt 1 view .LVU40
+ 253              		.loc 1 33 5 is_stmt 1 view .LVU41
   34:Core/Src/25flash.c **** 	tData[0] = 0x03;
- 253              		.loc 1 34 2 view .LVU41
- 254              		.loc 1 34 11 is_stmt 0 view .LVU42
- 255 0004 0323     		movs	r3, #3
- 256 0006 8DF80430 		strb	r3, [sp, #4]
+ 254              		.loc 1 34 2 view .LVU42
+ 255              		.loc 1 34 11 is_stmt 0 view .LVU43
+ 256 0004 0323     		movs	r3, #3
+ 257 0006 8DF80430 		strb	r3, [sp, #4]
   35:Core/Src/25flash.c ****     tData[1] = (address >> 16) & 0xFF;  // Most significant byte
- 257              		.loc 1 35 5 is_stmt 1 view .LVU43
- 258              		.loc 1 35 25 is_stmt 0 view .LVU44
- 259 000a 030C     		lsrs	r3, r0, #16
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 6
+ 258              		.loc 1 35 5 is_stmt 1 view .LVU44
+ 259              		.loc 1 35 25 is_stmt 0 view .LVU45
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 6
 
 
- 260              		.loc 1 35 14 view .LVU45
- 261 000c 8DF80530 		strb	r3, [sp, #5]
+ 260 000a 030C     		lsrs	r3, r0, #16
+ 261              		.loc 1 35 14 view .LVU46
+ 262 000c 8DF80530 		strb	r3, [sp, #5]
   36:Core/Src/25flash.c ****     tData[2] = (address >> 8) & 0xFF;
- 262              		.loc 1 36 5 is_stmt 1 view .LVU46
- 263              		.loc 1 36 25 is_stmt 0 view .LVU47
- 264 0010 030A     		lsrs	r3, r0, #8
- 265              		.loc 1 36 14 view .LVU48
- 266 0012 8DF80630 		strb	r3, [sp, #6]
+ 263              		.loc 1 36 5 is_stmt 1 view .LVU47
+ 264              		.loc 1 36 25 is_stmt 0 view .LVU48
+ 265 0010 030A     		lsrs	r3, r0, #8
+ 266              		.loc 1 36 14 view .LVU49
+ 267 0012 8DF80630 		strb	r3, [sp, #6]
   37:Core/Src/25flash.c ****     tData[3] = address & 0xFF;          // Least significant byte
- 267              		.loc 1 37 5 is_stmt 1 view .LVU49
- 268              		.loc 1 37 14 is_stmt 0 view .LVU50
- 269 0016 8DF80700 		strb	r0, [sp, #7]
+ 268              		.loc 1 37 5 is_stmt 1 view .LVU50
+ 269              		.loc 1 37 14 is_stmt 0 view .LVU51
+ 270 0016 8DF80700 		strb	r0, [sp, #7]
   38:Core/Src/25flash.c **** 	uint8_t rData[1];
- 270              		.loc 1 38 2 is_stmt 1 view .LVU51
+ 271              		.loc 1 38 2 is_stmt 1 view .LVU52
   39:Core/Src/25flash.c **** 	FLASH_CS_LOW();  // pull the CS LOW
- 271              		.loc 1 39 2 view .LVU52
- 272 001a 0C4C     		ldr	r4, .L19
- 273 001c 0022     		movs	r2, #0
- 274 001e 1021     		movs	r1, #16
- 275 0020 2046     		mov	r0, r4
- 276              	.LVL17:
- 277              		.loc 1 39 2 is_stmt 0 view .LVU53
- 278 0022 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 279              	.LVL18:
-  40:Core/Src/25flash.c ****     FLASH_SPI_Write(tData, 4);
- 280              		.loc 1 40 5 is_stmt 1 view .LVU54
- 281 0026 0421     		movs	r1, #4
- 282 0028 0DEB0100 		add	r0, sp, r1
- 283 002c FFF7FEFF 		bl	FLASH_SPI_Write
- 284              	.LVL19:
-  41:Core/Src/25flash.c **** 	FLASH_SPI_Read(rData, 1);
- 285              		.loc 1 41 2 view .LVU55
- 286 0030 0121     		movs	r1, #1
- 287 0032 6846     		mov	r0, sp
- 288 0034 FFF7FEFF 		bl	FLASH_SPI_Read
- 289              	.LVL20:
+ 272              		.loc 1 39 2 view .LVU53
+ 273 001a 0C4C     		ldr	r4, .L19
+ 274 001c 0022     		movs	r2, #0
+ 275 001e 1021     		movs	r1, #16
+ 276 0020 2046     		mov	r0, r4
+ 277              	.LVL17:
+ 278              		.loc 1 39 2 is_stmt 0 view .LVU54
+ 279 0022 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 280              	.LVL18:
+  40:Core/Src/25flash.c ****     MX25FLASH_SPI_Write(tData, 4);
+ 281              		.loc 1 40 5 is_stmt 1 view .LVU55
+ 282 0026 0421     		movs	r1, #4
+ 283 0028 0DEB0100 		add	r0, sp, r1
+ 284 002c FFF7FEFF 		bl	MX25FLASH_SPI_Write
+ 285              	.LVL19:
+  41:Core/Src/25flash.c **** 	MX25FLASH_SPI_Read(rData, 1);
+ 286              		.loc 1 41 2 view .LVU56
+ 287 0030 0121     		movs	r1, #1
+ 288 0032 6846     		mov	r0, sp
+ 289 0034 FFF7FEFF 		bl	MX25FLASH_SPI_Read
+ 290              	.LVL20:
   42:Core/Src/25flash.c **** 	FLASH_CS_HIGH();  // pull the HIGH
- 290              		.loc 1 42 2 view .LVU56
- 291 0038 0122     		movs	r2, #1
- 292 003a 1021     		movs	r1, #16
- 293 003c 2046     		mov	r0, r4
- 294 003e FFF7FEFF 		bl	HAL_GPIO_WritePin
- 295              	.LVL21:
+ 291              		.loc 1 42 2 view .LVU57
+ 292 0038 0122     		movs	r2, #1
+ 293 003a 1021     		movs	r1, #16
+ 294 003c 2046     		mov	r0, r4
+ 295 003e FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 296              	.LVL21:
   43:Core/Src/25flash.c ****     return rData[0];
- 296              		.loc 1 43 5 view .LVU57
+ 297              		.loc 1 43 5 view .LVU58
   44:Core/Src/25flash.c **** }
- 297              		.loc 1 44 1 is_stmt 0 view .LVU58
- 298 0042 9DF80000 		ldrb	r0, [sp]	@ zero_extendqisi2
- 299 0046 02B0     		add	sp, sp, #8
- 300              		.cfi_def_cfa_offset 8
- 301              		@ sp needed
- 302 0048 10BD     		pop	{r4, pc}
- 303              	.L20:
- 304 004a 00BF     		.align	2
- 305              	.L19:
- 306 004c 00080240 		.word	1073874944
- 307              		.cfi_endproc
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 7
+ 298              		.loc 1 44 1 is_stmt 0 view .LVU59
+ 299 0042 9DF80000 		ldrb	r0, [sp]	@ zero_extendqisi2
+ 300 0046 02B0     		add	sp, sp, #8
+ 301              		.cfi_def_cfa_offset 8
+ 302              		@ sp needed
+ 303 0048 10BD     		pop	{r4, pc}
+ 304              	.L20:
+ 305 004a 00BF     		.align	2
+ 306              	.L19:
+ 307 004c 00080240 		.word	1073874944
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 7
 
 
- 308              	.LFE243:
- 310              		.section	.text.FLASH_WE,"ax",%progbits
- 311              		.align	1
- 312              		.global	FLASH_WE
- 313              		.syntax unified
- 314              		.thumb
- 315              		.thumb_func
- 317              	FLASH_WE:
- 318              	.LFB245:
+ 308              		.cfi_endproc
+ 309              	.LFE243:
+ 311              		.section	.text.MX25FLASH_WE,"ax",%progbits
+ 312              		.align	1
+ 313              		.global	MX25FLASH_WE
+ 314              		.syntax unified
+ 315              		.thumb
+ 316              		.thumb_func
+ 318              	MX25FLASH_WE:
+ 319              	.LFB245:
   45:Core/Src/25flash.c **** 
-  46:Core/Src/25flash.c **** void FLASH_Program_Page(uint16_t page, uint8_t data[256]){
-  47:Core/Src/25flash.c **** 	FLASH_WE();
+  46:Core/Src/25flash.c **** void MX25FLASH_Program_Page(uint16_t page, uint8_t data[256]){
+  47:Core/Src/25flash.c **** 	MX25FLASH_WE();
   48:Core/Src/25flash.c ****     uint8_t tData[260];
   49:Core/Src/25flash.c **** 	uint32_t address = page * 0x100;
   50:Core/Src/25flash.c **** 	tData[0] = 0x02;
@@ -381,74 +382,75 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 1
   53:Core/Src/25flash.c ****     tData[3] = address & 0xFF;          // Least significant byte
   54:Core/Src/25flash.c **** 	memcpy(&tData[4], data, 256); 
   55:Core/Src/25flash.c **** 	FLASH_CS_LOW();  // pull the CS LOW
-  56:Core/Src/25flash.c ****     FLASH_SPI_Write(tData, 260);
+  56:Core/Src/25flash.c ****     MX25FLASH_SPI_Write(tData, 260);
   57:Core/Src/25flash.c **** 	FLASH_CS_HIGH();  // pull the HIGH
-  58:Core/Src/25flash.c **** 	FLASH_WFE();
+  58:Core/Src/25flash.c **** 	MX25FLASH_WFE();
   59:Core/Src/25flash.c **** }
   60:Core/Src/25flash.c **** 
-  61:Core/Src/25flash.c **** void FLASH_WE(void){
- 319              		.loc 1 61 20 is_stmt 1 view -0
- 320              		.cfi_startproc
- 321              		@ args = 0, pretend = 0, frame = 8
- 322              		@ frame_needed = 0, uses_anonymous_args = 0
- 323 0000 10B5     		push	{r4, lr}
- 324              		.cfi_def_cfa_offset 8
- 325              		.cfi_offset 4, -8
- 326              		.cfi_offset 14, -4
- 327 0002 82B0     		sub	sp, sp, #8
- 328              		.cfi_def_cfa_offset 16
+  61:Core/Src/25flash.c **** void MX25FLASH_WE(void){
+ 320              		.loc 1 61 24 is_stmt 1 view -0
+ 321              		.cfi_startproc
+ 322              		@ args = 0, pretend = 0, frame = 8
+ 323              		@ frame_needed = 0, uses_anonymous_args = 0
+ 324 0000 10B5     		push	{r4, lr}
+ 325              		.cfi_def_cfa_offset 8
+ 326              		.cfi_offset 4, -8
+ 327              		.cfi_offset 14, -4
+ 328 0002 82B0     		sub	sp, sp, #8
+ 329              		.cfi_def_cfa_offset 16
   62:Core/Src/25flash.c ****     uint8_t cmd = 0x06;
- 329              		.loc 1 62 5 view .LVU60
- 330              		.loc 1 62 13 is_stmt 0 view .LVU61
- 331 0004 0623     		movs	r3, #6
- 332 0006 8DF80730 		strb	r3, [sp, #7]
+ 330              		.loc 1 62 5 view .LVU61
+ 331              		.loc 1 62 13 is_stmt 0 view .LVU62
+ 332 0004 0623     		movs	r3, #6
+ 333 0006 8DF80730 		strb	r3, [sp, #7]
   63:Core/Src/25flash.c ****     FLASH_CS_LOW();
- 333              		.loc 1 63 5 is_stmt 1 view .LVU62
- 334 000a 094C     		ldr	r4, .L23
- 335 000c 0022     		movs	r2, #0
- 336 000e 1021     		movs	r1, #16
- 337 0010 2046     		mov	r0, r4
- 338 0012 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 339              	.LVL22:
-  64:Core/Src/25flash.c ****     FLASH_SPI_Write(&cmd, 1);
- 340              		.loc 1 64 5 view .LVU63
- 341 0016 0121     		movs	r1, #1
- 342 0018 0DF10700 		add	r0, sp, #7
- 343 001c FFF7FEFF 		bl	FLASH_SPI_Write
- 344              	.LVL23:
+ 334              		.loc 1 63 5 is_stmt 1 view .LVU63
+ 335 000a 094C     		ldr	r4, .L23
+ 336 000c 0022     		movs	r2, #0
+ 337 000e 1021     		movs	r1, #16
+ 338 0010 2046     		mov	r0, r4
+ 339 0012 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 340              	.LVL22:
+  64:Core/Src/25flash.c ****     MX25FLASH_SPI_Write(&cmd, 1);
+ 341              		.loc 1 64 5 view .LVU64
+ 342 0016 0121     		movs	r1, #1
+ 343 0018 0DF10700 		add	r0, sp, #7
+ 344 001c FFF7FEFF 		bl	MX25FLASH_SPI_Write
+ 345              	.LVL23:
   65:Core/Src/25flash.c ****     FLASH_CS_HIGH();
- 345              		.loc 1 65 5 view .LVU64
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 8
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 8
 
 
- 346 0020 0122     		movs	r2, #1
- 347 0022 1021     		movs	r1, #16
- 348 0024 2046     		mov	r0, r4
- 349 0026 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 350              	.LVL24:
+ 346              		.loc 1 65 5 view .LVU65
+ 347 0020 0122     		movs	r2, #1
+ 348 0022 1021     		movs	r1, #16
+ 349 0024 2046     		mov	r0, r4
+ 350 0026 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 351              	.LVL24:
   66:Core/Src/25flash.c **** }
- 351              		.loc 1 66 1 is_stmt 0 view .LVU65
- 352 002a 02B0     		add	sp, sp, #8
- 353              		.cfi_def_cfa_offset 8
- 354              		@ sp needed
- 355 002c 10BD     		pop	{r4, pc}
- 356              	.L24:
- 357 002e 00BF     		.align	2
- 358              	.L23:
- 359 0030 00080240 		.word	1073874944
- 360              		.cfi_endproc
- 361              	.LFE245:
- 363              		.section	.text.FLASH_WFE,"ax",%progbits
- 364              		.align	1
- 365              		.global	FLASH_WFE
- 366              		.syntax unified
- 367              		.thumb
- 368              		.thumb_func
- 370              	FLASH_WFE:
- 371              	.LFB247:
+ 352              		.loc 1 66 1 is_stmt 0 view .LVU66
+ 353 002a 02B0     		add	sp, sp, #8
+ 354              		.cfi_def_cfa_offset 8
+ 355              		@ sp needed
+ 356 002c 10BD     		pop	{r4, pc}
+ 357              	.L24:
+ 358 002e 00BF     		.align	2
+ 359              	.L23:
+ 360 0030 00080240 		.word	1073874944
+ 361              		.cfi_endproc
+ 362              	.LFE245:
+ 364              		.section	.text.MX25FLASH_Read_Sector,"ax",%progbits
+ 365              		.align	1
+ 366              		.global	MX25FLASH_Read_Sector
+ 367              		.syntax unified
+ 368              		.thumb
+ 369              		.thumb_func
+ 371              	MX25FLASH_Read_Sector:
+ 372              	.LVL25:
+ 373              	.LFB248:
   67:Core/Src/25flash.c **** 
-  68:Core/Src/25flash.c **** void FLASH_Sector_Erase(uint32_t sector){
-  69:Core/Src/25flash.c **** 	FLASH_WE();
+  68:Core/Src/25flash.c **** uint8_t MX25FLASH_Sector_Erase(uint32_t sector){
+  69:Core/Src/25flash.c **** 	MX25FLASH_WE();
   70:Core/Src/25flash.c ****     uint8_t cmd[4];
   71:Core/Src/25flash.c ****     cmd[0] = 0x20;  // 4KB Sector Erase
   72:Core/Src/25flash.c ****     cmd[1] = (sector >> 16) & 0xFF;
@@ -456,373 +458,621 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 1
   74:Core/Src/25flash.c ****     cmd[3] = sector & 0xFF;
   75:Core/Src/25flash.c **** 
   76:Core/Src/25flash.c ****     FLASH_CS_LOW();
-  77:Core/Src/25flash.c ****     FLASH_SPI_Write(cmd, 4);
+  77:Core/Src/25flash.c ****     MX25FLASH_SPI_Write(cmd, 4);
   78:Core/Src/25flash.c ****     FLASH_CS_HIGH();
-  79:Core/Src/25flash.c **** 	FLASH_WFE();
+  79:Core/Src/25flash.c **** 	return MX25FLASH_WFE();
   80:Core/Src/25flash.c **** }
   81:Core/Src/25flash.c **** 
-  82:Core/Src/25flash.c **** 
-  83:Core/Src/25flash.c **** void FLASH_WFE(void){
- 372              		.loc 1 83 21 is_stmt 1 view -0
- 373              		.cfi_startproc
- 374              		@ args = 0, pretend = 0, frame = 8
- 375              		@ frame_needed = 0, uses_anonymous_args = 0
- 376 0000 30B5     		push	{r4, r5, lr}
- 377              		.cfi_def_cfa_offset 12
- 378              		.cfi_offset 4, -12
- 379              		.cfi_offset 5, -8
- 380              		.cfi_offset 14, -4
- 381 0002 83B0     		sub	sp, sp, #12
- 382              		.cfi_def_cfa_offset 24
-  84:Core/Src/25flash.c ****     uint8_t cmd = 0x05;
- 383              		.loc 1 84 5 view .LVU67
- 384              		.loc 1 84 13 is_stmt 0 view .LVU68
- 385 0004 0523     		movs	r3, #5
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 9
+  82:Core/Src/25flash.c **** uint8_t MX25FLASH_Program_Sector(uint32_t sector, uint8_t *data){
+  83:Core/Src/25flash.c ****     MX25FLASH_WE();
+  84:Core/Src/25flash.c ****     for (uint8_t pg = 0; pg < 16; pg++){
+  85:Core/Src/25flash.c ****         uint8_t tData[260];
+  86:Core/Src/25flash.c ****         uint32_t address = sector*0x1000 + pg * 0x100;
+  87:Core/Src/25flash.c ****         tData[0] = 0x02;
+  88:Core/Src/25flash.c ****         tData[1] = (address >> 16) & 0xFF;  // Most significant byte
+  89:Core/Src/25flash.c ****         tData[2] = (address >> 8) & 0xFF;
+  90:Core/Src/25flash.c ****         tData[3] = address & 0xFF;          // Least significant byte
+  91:Core/Src/25flash.c ****         memcpy(&tData[4], &data[pg*256], 256); 
+  92:Core/Src/25flash.c ****         FLASH_CS_LOW();  // pull the CS LOW
+  93:Core/Src/25flash.c ****         MX25FLASH_SPI_Write(tData, 260);
+  94:Core/Src/25flash.c ****         FLASH_CS_HIGH();  // pull the HIGH
+  95:Core/Src/25flash.c ****     }
+  96:Core/Src/25flash.c ****     return MX25FLASH_WFE();
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 9
 
 
- 386 0006 8DF80730 		strb	r3, [sp, #7]
-  85:Core/Src/25flash.c **** 	uint32_t tmr = HAL_GetTick();
- 387              		.loc 1 85 2 is_stmt 1 view .LVU69
- 388              		.loc 1 85 17 is_stmt 0 view .LVU70
- 389 000a FFF7FEFF 		bl	HAL_GetTick
- 390              	.LVL25:
- 391 000e 0546     		mov	r5, r0
- 392              	.LVL26:
- 393              	.L28:
-  86:Core/Src/25flash.c ****     uint8_t status;
- 394              		.loc 1 86 5 is_stmt 1 view .LVU71
-  87:Core/Src/25flash.c ****     do {
- 395              		.loc 1 87 5 view .LVU72
-  88:Core/Src/25flash.c ****         FLASH_CS_LOW();
- 396              		.loc 1 88 9 view .LVU73
- 397 0010 104C     		ldr	r4, .L30
- 398 0012 0022     		movs	r2, #0
- 399 0014 1021     		movs	r1, #16
- 400 0016 2046     		mov	r0, r4
- 401 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 402              	.LVL27:
-  89:Core/Src/25flash.c ****         FLASH_SPI_Write(&cmd, 1);
- 403              		.loc 1 89 9 view .LVU74
- 404 001c 0121     		movs	r1, #1
- 405 001e 0DF10700 		add	r0, sp, #7
- 406 0022 FFF7FEFF 		bl	FLASH_SPI_Write
- 407              	.LVL28:
-  90:Core/Src/25flash.c ****         FLASH_SPI_Read(&status, 1);
- 408              		.loc 1 90 9 view .LVU75
- 409 0026 0121     		movs	r1, #1
- 410 0028 0DF10600 		add	r0, sp, #6
- 411 002c FFF7FEFF 		bl	FLASH_SPI_Read
- 412              	.LVL29:
-  91:Core/Src/25flash.c ****         FLASH_CS_HIGH();
- 413              		.loc 1 91 9 view .LVU76
- 414 0030 0122     		movs	r2, #1
- 415 0032 1021     		movs	r1, #16
- 416 0034 2046     		mov	r0, r4
- 417 0036 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 418              	.LVL30:
-  92:Core/Src/25flash.c **** 		if(HAL_GetTick() - tmr > FLASH_TIMEOUT){
- 419              		.loc 1 92 3 view .LVU77
- 420              		.loc 1 92 6 is_stmt 0 view .LVU78
- 421 003a FFF7FEFF 		bl	HAL_GetTick
- 422              	.LVL31:
- 423              		.loc 1 92 20 discriminator 1 view .LVU79
- 424 003e 401B     		subs	r0, r0, r5
- 425              		.loc 1 92 5 discriminator 1 view .LVU80
- 426 0040 B0F5FA7F 		cmp	r0, #500
- 427 0044 04D8     		bhi	.L25
-  93:Core/Src/25flash.c **** 			return;
-  94:Core/Src/25flash.c **** 		}
-  95:Core/Src/25flash.c ****     } while (status & 0x01);  // Wait while WIP bit is set
- 428              		.loc 1 95 14 is_stmt 1 view .LVU81
- 429              		.loc 1 95 21 is_stmt 0 view .LVU82
- 430 0046 9DF80630 		ldrb	r3, [sp, #6]	@ zero_extendqisi2
- 431              		.loc 1 95 14 view .LVU83
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 10
+  97:Core/Src/25flash.c **** }
+  98:Core/Src/25flash.c **** 
+  99:Core/Src/25flash.c **** void MX25FLASH_Read_Sector(uint32_t sector, uint8_t *data){
+ 374              		.loc 1 99 59 is_stmt 1 view -0
+ 375              		.cfi_startproc
+ 376              		@ args = 0, pretend = 0, frame = 0
+ 377              		@ frame_needed = 0, uses_anonymous_args = 0
+ 378              		.loc 1 99 59 is_stmt 0 view .LVU68
+ 379 0000 70B5     		push	{r4, r5, r6, lr}
+ 380              		.cfi_def_cfa_offset 16
+ 381              		.cfi_offset 4, -16
+ 382              		.cfi_offset 5, -12
+ 383              		.cfi_offset 6, -8
+ 384              		.cfi_offset 14, -4
+ 385 0002 0646     		mov	r6, r0
+ 386 0004 0D46     		mov	r5, r1
+ 100:Core/Src/25flash.c ****     for (uint32_t addr = 0; addr < 4096; addr++){
+ 387              		.loc 1 100 5 is_stmt 1 view .LVU69
+ 388              	.LBB2:
+ 389              		.loc 1 100 10 view .LVU70
+ 390              	.LVL26:
+ 391              		.loc 1 100 19 is_stmt 0 view .LVU71
+ 392 0006 0024     		movs	r4, #0
+ 393              		.loc 1 100 5 view .LVU72
+ 394 0008 05E0     		b	.L26
+ 395              	.LVL27:
+ 396              	.L27:
+ 101:Core/Src/25flash.c ****         data[addr] = MX25FLASH_Read(sector*0x1000+addr);
+ 397              		.loc 1 101 9 is_stmt 1 view .LVU73
+ 398              		.loc 1 101 22 is_stmt 0 view .LVU74
+ 399 000a 04EB0630 		add	r0, r4, r6, lsl #12
+ 400 000e FFF7FEFF 		bl	MX25FLASH_Read
+ 401              	.LVL28:
+ 402              		.loc 1 101 20 discriminator 1 view .LVU75
+ 403 0012 2855     		strb	r0, [r5, r4]
+ 100:Core/Src/25flash.c ****     for (uint32_t addr = 0; addr < 4096; addr++){
+ 404              		.loc 1 100 46 is_stmt 1 discriminator 3 view .LVU76
+ 405 0014 0134     		adds	r4, r4, #1
+ 406              	.LVL29:
+ 407              	.L26:
+ 100:Core/Src/25flash.c ****     for (uint32_t addr = 0; addr < 4096; addr++){
+ 408              		.loc 1 100 34 discriminator 1 view .LVU77
+ 409 0016 B4F5805F 		cmp	r4, #4096
+ 410 001a F6D3     		bcc	.L27
+ 411              	.LBE2:
+ 102:Core/Src/25flash.c ****     }
+ 103:Core/Src/25flash.c **** }
+ 412              		.loc 1 103 1 is_stmt 0 view .LVU78
+ 413 001c 70BD     		pop	{r4, r5, r6, pc}
+ 414              		.loc 1 103 1 view .LVU79
+ 415              		.cfi_endproc
+ 416              	.LFE248:
+ 418              		.section	.text.MX25FLASH_WFE,"ax",%progbits
+ 419              		.align	1
+ 420              		.global	MX25FLASH_WFE
+ 421              		.syntax unified
+ 422              		.thumb
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 10
 
 
- 432 004a 13F0010F 		tst	r3, #1
- 433 004e DFD1     		bne	.L28
- 434              	.L25:
-  96:Core/Src/25flash.c **** }...
- 435              		.loc 1 96 1 view .LVU84
- 436 0050 03B0     		add	sp, sp, #12
- 437              		.cfi_def_cfa_offset 12
- 438              		@ sp needed
- 439 0052 30BD     		pop	{r4, r5, pc}
- 440              	.LVL32:
- 441              	.L31:
- 442              		.loc 1 96 1 view .LVU85
- 443              		.align	2
- 444              	.L30:
- 445 0054 00080240 		.word	1073874944
- 446              		.cfi_endproc
- 447              	.LFE247:
- 449              		.section	.text.FLASH_Program_Page,"ax",%progbits
- 450              		.align	1
- 451              		.global	FLASH_Program_Page
- 452              		.syntax unified
- 453              		.thumb
- 454              		.thumb_func
- 456              	FLASH_Program_Page:
- 457              	.LVL33:
- 458              	.LFB244:
-  46:Core/Src/25flash.c **** void FLASH_Program_Page(uint16_t page, uint8_t data[256]){
- 459              		.loc 1 46 58 is_stmt 1 view -0
- 460              		.cfi_startproc
- 461              		@ args = 0, pretend = 0, frame = 264
- 462              		@ frame_needed = 0, uses_anonymous_args = 0
-  46:Core/Src/25flash.c **** void FLASH_Program_Page(uint16_t page, uint8_t data[256]){
- 463              		.loc 1 46 58 is_stmt 0 view .LVU87
- 464 0000 30B5     		push	{r4, r5, lr}
- 465              		.cfi_def_cfa_offset 12
- 466              		.cfi_offset 4, -12
- 467              		.cfi_offset 5, -8
- 468              		.cfi_offset 14, -4
- 469 0002 C3B0     		sub	sp, sp, #268
- 470              		.cfi_def_cfa_offset 280
- 471 0004 0446     		mov	r4, r0
- 472 0006 0D46     		mov	r5, r1
-  47:Core/Src/25flash.c **** 	FLASH_WE();
- 473              		.loc 1 47 2 is_stmt 1 view .LVU88
- 474 0008 FFF7FEFF 		bl	FLASH_WE
- 475              	.LVL34:
+ 423              		.thumb_func
+ 425              	MX25FLASH_WFE:
+ 426              	.LFB249:
+ 104:Core/Src/25flash.c **** 
+ 105:Core/Src/25flash.c **** 
+ 106:Core/Src/25flash.c **** uint8_t MX25FLASH_WFE(void){
+ 427              		.loc 1 106 28 is_stmt 1 view -0
+ 428              		.cfi_startproc
+ 429              		@ args = 0, pretend = 0, frame = 8
+ 430              		@ frame_needed = 0, uses_anonymous_args = 0
+ 431 0000 30B5     		push	{r4, r5, lr}
+ 432              		.cfi_def_cfa_offset 12
+ 433              		.cfi_offset 4, -12
+ 434              		.cfi_offset 5, -8
+ 435              		.cfi_offset 14, -4
+ 436 0002 83B0     		sub	sp, sp, #12
+ 437              		.cfi_def_cfa_offset 24
+ 107:Core/Src/25flash.c ****     uint8_t cmd = 0x05;
+ 438              		.loc 1 107 5 view .LVU81
+ 439              		.loc 1 107 13 is_stmt 0 view .LVU82
+ 440 0004 0523     		movs	r3, #5
+ 441 0006 8DF80730 		strb	r3, [sp, #7]
+ 108:Core/Src/25flash.c **** 	uint32_t tmr = HAL_GetTick();
+ 442              		.loc 1 108 2 is_stmt 1 view .LVU83
+ 443              		.loc 1 108 17 is_stmt 0 view .LVU84
+ 444 000a FFF7FEFF 		bl	HAL_GetTick
+ 445              	.LVL30:
+ 446 000e 0546     		mov	r5, r0
+ 447              	.LVL31:
+ 448              	.L31:
+ 109:Core/Src/25flash.c ****     uint8_t status;
+ 449              		.loc 1 109 5 is_stmt 1 view .LVU85
+ 110:Core/Src/25flash.c ****     do {
+ 450              		.loc 1 110 5 view .LVU86
+ 111:Core/Src/25flash.c ****         FLASH_CS_LOW();
+ 451              		.loc 1 111 9 view .LVU87
+ 452 0010 114C     		ldr	r4, .L34
+ 453 0012 0022     		movs	r2, #0
+ 454 0014 1021     		movs	r1, #16
+ 455 0016 2046     		mov	r0, r4
+ 456 0018 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 457              	.LVL32:
+ 112:Core/Src/25flash.c ****         MX25FLASH_SPI_Write(&cmd, 1);
+ 458              		.loc 1 112 9 view .LVU88
+ 459 001c 0121     		movs	r1, #1
+ 460 001e 0DF10700 		add	r0, sp, #7
+ 461 0022 FFF7FEFF 		bl	MX25FLASH_SPI_Write
+ 462              	.LVL33:
+ 113:Core/Src/25flash.c ****         MX25FLASH_SPI_Read(&status, 1);
+ 463              		.loc 1 113 9 view .LVU89
+ 464 0026 0121     		movs	r1, #1
+ 465 0028 0DF10600 		add	r0, sp, #6
+ 466 002c FFF7FEFF 		bl	MX25FLASH_SPI_Read
+ 467              	.LVL34:
+ 114:Core/Src/25flash.c ****         FLASH_CS_HIGH();
+ 468              		.loc 1 114 9 view .LVU90
+ 469 0030 0122     		movs	r2, #1
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 11
+
+
+ 470 0032 1021     		movs	r1, #16
+ 471 0034 2046     		mov	r0, r4
+ 472 0036 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 473              	.LVL35:
+ 115:Core/Src/25flash.c **** 		if(HAL_GetTick() - tmr > FLASH_TIMEOUT){
+ 474              		.loc 1 115 3 view .LVU91
+ 475              		.loc 1 115 6 is_stmt 0 view .LVU92
+ 476 003a FFF7FEFF 		bl	HAL_GetTick
+ 477              	.LVL36:
+ 478              		.loc 1 115 20 discriminator 1 view .LVU93
+ 479 003e 401B     		subs	r0, r0, r5
+ 480              		.loc 1 115 5 discriminator 1 view .LVU94
+ 481 0040 B0F5FA7F 		cmp	r0, #500
+ 482 0044 05D8     		bhi	.L32
+ 116:Core/Src/25flash.c **** 			return FL_FAIL;
+ 117:Core/Src/25flash.c **** 		}
+ 118:Core/Src/25flash.c ****     } while (status & 0x01);  // Wait while WIP bit is set
+ 483              		.loc 1 118 14 is_stmt 1 view .LVU95
+ 484              		.loc 1 118 21 is_stmt 0 view .LVU96
+ 485 0046 9DF80600 		ldrb	r0, [sp, #6]	@ zero_extendqisi2
+ 486              		.loc 1 118 14 view .LVU97
+ 487 004a 10F00100 		ands	r0, r0, #1
+ 488 004e DFD1     		bne	.L31
+ 489 0050 00E0     		b	.L30
+ 490              	.L32:
+ 116:Core/Src/25flash.c **** 			return FL_FAIL;
+ 491              		.loc 1 116 11 view .LVU98
+ 492 0052 0120     		movs	r0, #1
+ 493              	.L30:
+ 119:Core/Src/25flash.c ****     return FL_OK;
+ 120:Core/Src/25flash.c **** }...
+ 494              		.loc 1 120 1 view .LVU99
+ 495 0054 03B0     		add	sp, sp, #12
+ 496              		.cfi_def_cfa_offset 12
+ 497              		@ sp needed
+ 498 0056 30BD     		pop	{r4, r5, pc}
+ 499              	.LVL37:
+ 500              	.L35:
+ 501              		.loc 1 120 1 view .LVU100
+ 502              		.align	2
+ 503              	.L34:
+ 504 0058 00080240 		.word	1073874944
+ 505              		.cfi_endproc
+ 506              	.LFE249:
+ 508              		.section	.text.MX25FLASH_Program_Page,"ax",%progbits
+ 509              		.align	1
+ 510              		.global	MX25FLASH_Program_Page
+ 511              		.syntax unified
+ 512              		.thumb
+ 513              		.thumb_func
+ 515              	MX25FLASH_Program_Page:
+ 516              	.LVL38:
+ 517              	.LFB244:
+  46:Core/Src/25flash.c **** void MX25FLASH_Program_Page(uint16_t page, uint8_t data[256]){
+ 518              		.loc 1 46 62 is_stmt 1 view -0
+ 519              		.cfi_startproc
+ 520              		@ args = 0, pretend = 0, frame = 264
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 12
+
+
+ 521              		@ frame_needed = 0, uses_anonymous_args = 0
+  46:Core/Src/25flash.c **** void MX25FLASH_Program_Page(uint16_t page, uint8_t data[256]){
+ 522              		.loc 1 46 62 is_stmt 0 view .LVU102
+ 523 0000 30B5     		push	{r4, r5, lr}
+ 524              		.cfi_def_cfa_offset 12
+ 525              		.cfi_offset 4, -12
+ 526              		.cfi_offset 5, -8
+ 527              		.cfi_offset 14, -4
+ 528 0002 C3B0     		sub	sp, sp, #268
+ 529              		.cfi_def_cfa_offset 280
+ 530 0004 0446     		mov	r4, r0
+ 531 0006 0D46     		mov	r5, r1
+  47:Core/Src/25flash.c **** 	MX25FLASH_WE();
+ 532              		.loc 1 47 2 is_stmt 1 view .LVU103
+ 533 0008 FFF7FEFF 		bl	MX25FLASH_WE
+ 534              	.LVL39:
   48:Core/Src/25flash.c ****     uint8_t tData[260];
- 476              		.loc 1 48 5 view .LVU89
+ 535              		.loc 1 48 5 view .LVU104
   49:Core/Src/25flash.c **** 	uint32_t address = page * 0x100;
- 477              		.loc 1 49 2 view .LVU90
+ 536              		.loc 1 49 2 view .LVU105
   49:Core/Src/25flash.c **** 	uint32_t address = page * 0x100;
- 478              		.loc 1 49 26 is_stmt 0 view .LVU91
- 479 000c 2302     		lsls	r3, r4, #8
- 480              	.LVL35:
+ 537              		.loc 1 49 26 is_stmt 0 view .LVU106
+ 538 000c 2302     		lsls	r3, r4, #8
+ 539              	.LVL40:
   50:Core/Src/25flash.c **** 	tData[0] = 0x02;
- 481              		.loc 1 50 2 is_stmt 1 view .LVU92
+ 540              		.loc 1 50 2 is_stmt 1 view .LVU107
   50:Core/Src/25flash.c **** 	tData[0] = 0x02;
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 11
-
-
- 482              		.loc 1 50 11 is_stmt 0 view .LVU93
- 483 000e 0222     		movs	r2, #2
- 484 0010 8DF80420 		strb	r2, [sp, #4]
+ 541              		.loc 1 50 11 is_stmt 0 view .LVU108
+ 542 000e 0222     		movs	r2, #2
+ 543 0010 8DF80420 		strb	r2, [sp, #4]
   51:Core/Src/25flash.c ****     tData[1] = (address >> 16) & 0xFF;  // Most significant byte
- 485              		.loc 1 51 5 is_stmt 1 view .LVU94
+ 544              		.loc 1 51 5 is_stmt 1 view .LVU109
   51:Core/Src/25flash.c ****     tData[1] = (address >> 16) & 0xFF;  // Most significant byte
- 486              		.loc 1 51 25 is_stmt 0 view .LVU95
- 487 0014 220A     		lsrs	r2, r4, #8
+ 545              		.loc 1 51 25 is_stmt 0 view .LVU110
+ 546 0014 220A     		lsrs	r2, r4, #8
   51:Core/Src/25flash.c ****     tData[1] = (address >> 16) & 0xFF;  // Most significant byte
- 488              		.loc 1 51 14 view .LVU96
- 489 0016 8DF80520 		strb	r2, [sp, #5]
+ 547              		.loc 1 51 14 view .LVU111
+ 548 0016 8DF80520 		strb	r2, [sp, #5]
   52:Core/Src/25flash.c ****     tData[2] = (address >> 8) & 0xFF;
- 490              		.loc 1 52 5 is_stmt 1 view .LVU97
+ 549              		.loc 1 52 5 is_stmt 1 view .LVU112
   52:Core/Src/25flash.c ****     tData[2] = (address >> 8) & 0xFF;
- 491              		.loc 1 52 14 is_stmt 0 view .LVU98
- 492 001a 8DF80640 		strb	r4, [sp, #6]
+ 550              		.loc 1 52 14 is_stmt 0 view .LVU113
+ 551 001a 8DF80640 		strb	r4, [sp, #6]
   53:Core/Src/25flash.c ****     tData[3] = address & 0xFF;          // Least significant byte
- 493              		.loc 1 53 5 is_stmt 1 view .LVU99
+ 552              		.loc 1 53 5 is_stmt 1 view .LVU114
   53:Core/Src/25flash.c ****     tData[3] = address & 0xFF;          // Least significant byte
- 494              		.loc 1 53 14 is_stmt 0 view .LVU100
- 495 001e 8DF80730 		strb	r3, [sp, #7]
+ 553              		.loc 1 53 14 is_stmt 0 view .LVU115
+ 554 001e 8DF80730 		strb	r3, [sp, #7]
   54:Core/Src/25flash.c **** 	memcpy(&tData[4], data, 256); 
- 496              		.loc 1 54 2 is_stmt 1 view .LVU101
- 497 0022 4FF48072 		mov	r2, #256
- 498 0026 2946     		mov	r1, r5
- 499 0028 02A8     		add	r0, sp, #8
- 500 002a FFF7FEFF 		bl	memcpy
- 501              	.LVL36:
+ 555              		.loc 1 54 2 is_stmt 1 view .LVU116
+ 556 0022 4FF48072 		mov	r2, #256
+ 557 0026 2946     		mov	r1, r5
+ 558 0028 02A8     		add	r0, sp, #8
+ 559 002a FFF7FEFF 		bl	memcpy
+ 560              	.LVL41:
   55:Core/Src/25flash.c **** 	FLASH_CS_LOW();  // pull the CS LOW
- 502              		.loc 1 55 2 view .LVU102
- 503 002e 0A4C     		ldr	r4, .L34
- 504              	.LVL37:
+ 561              		.loc 1 55 2 view .LVU117
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 13
+
+
+ 562 002e 0A4C     		ldr	r4, .L38
+ 563              	.LVL42:
   55:Core/Src/25flash.c **** 	FLASH_CS_LOW();  // pull the CS LOW
- 505              		.loc 1 55 2 is_stmt 0 view .LVU103
- 506 0030 0022     		movs	r2, #0
- 507 0032 1021     		movs	r1, #16
- 508 0034 2046     		mov	r0, r4
- 509 0036 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 510              	.LVL38:
-  56:Core/Src/25flash.c ****     FLASH_SPI_Write(tData, 260);
- 511              		.loc 1 56 5 is_stmt 1 view .LVU104
- 512 003a 4FF48271 		mov	r1, #260
- 513 003e 01A8     		add	r0, sp, #4
- 514 0040 FFF7FEFF 		bl	FLASH_SPI_Write
- 515              	.LVL39:
+ 564              		.loc 1 55 2 is_stmt 0 view .LVU118
+ 565 0030 0022     		movs	r2, #0
+ 566 0032 1021     		movs	r1, #16
+ 567 0034 2046     		mov	r0, r4
+ 568 0036 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 569              	.LVL43:
+  56:Core/Src/25flash.c ****     MX25FLASH_SPI_Write(tData, 260);
+ 570              		.loc 1 56 5 is_stmt 1 view .LVU119
+ 571 003a 4FF48271 		mov	r1, #260
+ 572 003e 01A8     		add	r0, sp, #4
+ 573 0040 FFF7FEFF 		bl	MX25FLASH_SPI_Write
+ 574              	.LVL44:
   57:Core/Src/25flash.c **** 	FLASH_CS_HIGH();  // pull the HIGH
- 516              		.loc 1 57 2 view .LVU105
- 517 0044 0122     		movs	r2, #1
- 518 0046 1021     		movs	r1, #16
- 519 0048 2046     		mov	r0, r4
- 520 004a FFF7FEFF 		bl	HAL_GPIO_WritePin
- 521              	.LVL40:
-  58:Core/Src/25flash.c **** 	FLASH_WFE();
- 522              		.loc 1 58 2 view .LVU106
- 523 004e FFF7FEFF 		bl	FLASH_WFE
- 524              	.LVL41:
+ 575              		.loc 1 57 2 view .LVU120
+ 576 0044 0122     		movs	r2, #1
+ 577 0046 1021     		movs	r1, #16
+ 578 0048 2046     		mov	r0, r4
+ 579 004a FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 580              	.LVL45:
+  58:Core/Src/25flash.c **** 	MX25FLASH_WFE();
+ 581              		.loc 1 58 2 view .LVU121
+ 582 004e FFF7FEFF 		bl	MX25FLASH_WFE
+ 583              	.LVL46:
   59:Core/Src/25flash.c **** }
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 12
+ 584              		.loc 1 59 1 is_stmt 0 view .LVU122
+ 585 0052 43B0     		add	sp, sp, #268
+ 586              		.cfi_def_cfa_offset 12
+ 587              		@ sp needed
+ 588 0054 30BD     		pop	{r4, r5, pc}
+ 589              	.LVL47:
+ 590              	.L39:
+  59:Core/Src/25flash.c **** }
+ 591              		.loc 1 59 1 view .LVU123
+ 592 0056 00BF     		.align	2
+ 593              	.L38:
+ 594 0058 00080240 		.word	1073874944
+ 595              		.cfi_endproc
+ 596              	.LFE244:
+ 598              		.section	.text.MX25FLASH_Sector_Erase,"ax",%progbits
+ 599              		.align	1
+ 600              		.global	MX25FLASH_Sector_Erase
+ 601              		.syntax unified
+ 602              		.thumb
+ 603              		.thumb_func
+ 605              	MX25FLASH_Sector_Erase:
+ 606              	.LVL48:
+ 607              	.LFB246:
+  68:Core/Src/25flash.c **** uint8_t MX25FLASH_Sector_Erase(uint32_t sector){
+ 608              		.loc 1 68 48 is_stmt 1 view -0
+ 609              		.cfi_startproc
+ 610              		@ args = 0, pretend = 0, frame = 8
+ 611              		@ frame_needed = 0, uses_anonymous_args = 0
+  68:Core/Src/25flash.c **** uint8_t MX25FLASH_Sector_Erase(uint32_t sector){
+ 612              		.loc 1 68 48 is_stmt 0 view .LVU125
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 14
 
 
- 525              		.loc 1 59 1 is_stmt 0 view .LVU107
- 526 0052 43B0     		add	sp, sp, #268
- 527              		.cfi_def_cfa_offset 12
- 528              		@ sp needed
- 529 0054 30BD     		pop	{r4, r5, pc}
- 530              	.LVL42:
- 531              	.L35:
-  59:Core/Src/25flash.c **** }
- 532              		.loc 1 59 1 view .LVU108
- 533 0056 00BF     		.align	2
- 534              	.L34:
- 535 0058 00080240 		.word	1073874944
- 536              		.cfi_endproc
- 537              	.LFE244:
- 539              		.section	.text.FLASH_Sector_Erase,"ax",%progbits
- 540              		.align	1
- 541              		.global	FLASH_Sector_Erase
- 542              		.syntax unified
- 543              		.thumb
- 544              		.thumb_func
- 546              	FLASH_Sector_Erase:
- 547              	.LVL43:
- 548              	.LFB246:
-  68:Core/Src/25flash.c **** void FLASH_Sector_Erase(uint32_t sector){
- 549              		.loc 1 68 41 is_stmt 1 view -0
- 550              		.cfi_startproc
- 551              		@ args = 0, pretend = 0, frame = 8
- 552              		@ frame_needed = 0, uses_anonymous_args = 0
-  68:Core/Src/25flash.c **** void FLASH_Sector_Erase(uint32_t sector){
- 553              		.loc 1 68 41 is_stmt 0 view .LVU110
- 554 0000 10B5     		push	{r4, lr}
- 555              		.cfi_def_cfa_offset 8
- 556              		.cfi_offset 4, -8
- 557              		.cfi_offset 14, -4
- 558 0002 82B0     		sub	sp, sp, #8
- 559              		.cfi_def_cfa_offset 16
- 560 0004 0446     		mov	r4, r0
-  69:Core/Src/25flash.c **** 	FLASH_WE();
- 561              		.loc 1 69 2 is_stmt 1 view .LVU111
- 562 0006 FFF7FEFF 		bl	FLASH_WE
- 563              	.LVL44:
+ 613 0000 10B5     		push	{r4, lr}
+ 614              		.cfi_def_cfa_offset 8
+ 615              		.cfi_offset 4, -8
+ 616              		.cfi_offset 14, -4
+ 617 0002 82B0     		sub	sp, sp, #8
+ 618              		.cfi_def_cfa_offset 16
+ 619 0004 0446     		mov	r4, r0
+  69:Core/Src/25flash.c **** 	MX25FLASH_WE();
+ 620              		.loc 1 69 2 is_stmt 1 view .LVU126
+ 621 0006 FFF7FEFF 		bl	MX25FLASH_WE
+ 622              	.LVL49:
   70:Core/Src/25flash.c ****     uint8_t cmd[4];
- 564              		.loc 1 70 5 view .LVU112
+ 623              		.loc 1 70 5 view .LVU127
   71:Core/Src/25flash.c ****     cmd[0] = 0x20;  // 4KB Sector Erase
- 565              		.loc 1 71 5 view .LVU113
+ 624              		.loc 1 71 5 view .LVU128
   71:Core/Src/25flash.c ****     cmd[0] = 0x20;  // 4KB Sector Erase
- 566              		.loc 1 71 12 is_stmt 0 view .LVU114
- 567 000a 2023     		movs	r3, #32
- 568 000c 8DF80430 		strb	r3, [sp, #4]
+ 625              		.loc 1 71 12 is_stmt 0 view .LVU129
+ 626 000a 2023     		movs	r3, #32
+ 627 000c 8DF80430 		strb	r3, [sp, #4]
   72:Core/Src/25flash.c ****     cmd[1] = (sector >> 16) & 0xFF;
- 569              		.loc 1 72 5 is_stmt 1 view .LVU115
+ 628              		.loc 1 72 5 is_stmt 1 view .LVU130
   72:Core/Src/25flash.c ****     cmd[1] = (sector >> 16) & 0xFF;
- 570              		.loc 1 72 22 is_stmt 0 view .LVU116
- 571 0010 230C     		lsrs	r3, r4, #16
+ 629              		.loc 1 72 22 is_stmt 0 view .LVU131
+ 630 0010 230C     		lsrs	r3, r4, #16
   72:Core/Src/25flash.c ****     cmd[1] = (sector >> 16) & 0xFF;
- 572              		.loc 1 72 12 view .LVU117
- 573 0012 8DF80530 		strb	r3, [sp, #5]
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 13
+ 631              		.loc 1 72 12 view .LVU132
+ 632 0012 8DF80530 		strb	r3, [sp, #5]
+  73:Core/Src/25flash.c ****     cmd[2] = (sector >> 8) & 0xFF;
+ 633              		.loc 1 73 5 is_stmt 1 view .LVU133
+  73:Core/Src/25flash.c ****     cmd[2] = (sector >> 8) & 0xFF;
+ 634              		.loc 1 73 22 is_stmt 0 view .LVU134
+ 635 0016 230A     		lsrs	r3, r4, #8
+  73:Core/Src/25flash.c ****     cmd[2] = (sector >> 8) & 0xFF;
+ 636              		.loc 1 73 12 view .LVU135
+ 637 0018 8DF80630 		strb	r3, [sp, #6]
+  74:Core/Src/25flash.c ****     cmd[3] = sector & 0xFF;
+ 638              		.loc 1 74 5 is_stmt 1 view .LVU136
+  74:Core/Src/25flash.c ****     cmd[3] = sector & 0xFF;
+ 639              		.loc 1 74 12 is_stmt 0 view .LVU137
+ 640 001c 8DF80740 		strb	r4, [sp, #7]
+  76:Core/Src/25flash.c ****     FLASH_CS_LOW();
+ 641              		.loc 1 76 5 is_stmt 1 view .LVU138
+ 642 0020 094C     		ldr	r4, .L42
+ 643              	.LVL50:
+  76:Core/Src/25flash.c ****     FLASH_CS_LOW();
+ 644              		.loc 1 76 5 is_stmt 0 view .LVU139
+ 645 0022 0022     		movs	r2, #0
+ 646 0024 1021     		movs	r1, #16
+ 647 0026 2046     		mov	r0, r4
+ 648 0028 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 649              	.LVL51:
+  77:Core/Src/25flash.c ****     MX25FLASH_SPI_Write(cmd, 4);
+ 650              		.loc 1 77 5 is_stmt 1 view .LVU140
+ 651 002c 0421     		movs	r1, #4
+ 652 002e 0DEB0100 		add	r0, sp, r1
+ 653 0032 FFF7FEFF 		bl	MX25FLASH_SPI_Write
+ 654              	.LVL52:
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 15
 
 
-  73:Core/Src/25flash.c ****     cmd[2] = (sector >> 8) & 0xFF;
- 574              		.loc 1 73 5 is_stmt 1 view .LVU118
-  73:Core/Src/25flash.c ****     cmd[2] = (sector >> 8) & 0xFF;
- 575              		.loc 1 73 22 is_stmt 0 view .LVU119
- 576 0016 230A     		lsrs	r3, r4, #8
-  73:Core/Src/25flash.c ****     cmd[2] = (sector >> 8) & 0xFF;
- 577              		.loc 1 73 12 view .LVU120
- 578 0018 8DF80630 		strb	r3, [sp, #6]
-  74:Core/Src/25flash.c ****     cmd[3] = sector & 0xFF;
- 579              		.loc 1 74 5 is_stmt 1 view .LVU121
-  74:Core/Src/25flash.c ****     cmd[3] = sector & 0xFF;
- 580              		.loc 1 74 12 is_stmt 0 view .LVU122
- 581 001c 8DF80740 		strb	r4, [sp, #7]
-  76:Core/Src/25flash.c ****     FLASH_CS_LOW();
- 582              		.loc 1 76 5 is_stmt 1 view .LVU123
- 583 0020 094C     		ldr	r4, .L38
- 584              	.LVL45:
-  76:Core/Src/25flash.c ****     FLASH_CS_LOW();
- 585              		.loc 1 76 5 is_stmt 0 view .LVU124
- 586 0022 0022     		movs	r2, #0
- 587 0024 1021     		movs	r1, #16
- 588 0026 2046     		mov	r0, r4
- 589 0028 FFF7FEFF 		bl	HAL_GPIO_WritePin
- 590              	.LVL46:
-  77:Core/Src/25flash.c ****     FLASH_SPI_Write(cmd, 4);
- 591              		.loc 1 77 5 is_stmt 1 view .LVU125
- 592 002c 0421     		movs	r1, #4
- 593 002e 0DEB0100 		add	r0, sp, r1
- 594 0032 FFF7FEFF 		bl	FLASH_SPI_Write
- 595              	.LVL47:
   78:Core/Src/25flash.c ****     FLASH_CS_HIGH();
- 596              		.loc 1 78 5 view .LVU126
- 597 0036 0122     		movs	r2, #1
- 598 0038 1021     		movs	r1, #16
- 599 003a 2046     		mov	r0, r4
- 600 003c FFF7FEFF 		bl	HAL_GPIO_WritePin
- 601              	.LVL48:
-  79:Core/Src/25flash.c **** 	FLASH_WFE();
- 602              		.loc 1 79 2 view .LVU127
- 603 0040 FFF7FEFF 		bl	FLASH_WFE
- 604              	.LVL49:
+ 655              		.loc 1 78 5 view .LVU141
+ 656 0036 0122     		movs	r2, #1
+ 657 0038 1021     		movs	r1, #16
+ 658 003a 2046     		mov	r0, r4
+ 659 003c FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 660              	.LVL53:
+  79:Core/Src/25flash.c **** 	return MX25FLASH_WFE();
+ 661              		.loc 1 79 2 view .LVU142
+  79:Core/Src/25flash.c **** 	return MX25FLASH_WFE();
+ 662              		.loc 1 79 9 is_stmt 0 view .LVU143
+ 663 0040 FFF7FEFF 		bl	MX25FLASH_WFE
+ 664              	.LVL54:
   80:Core/Src/25flash.c **** }
- 605              		.loc 1 80 1 is_stmt 0 view .LVU128
- 606 0044 02B0     		add	sp, sp, #8
- 607              		.cfi_def_cfa_offset 8
- 608              		@ sp needed
- 609 0046 10BD     		pop	{r4, pc}
- 610              	.L39:
- 611              		.align	2
- 612              	.L38:
- 613 0048 00080240 		.word	1073874944
- 614              		.cfi_endproc
- 615              	.LFE246:
- 617              		.text
- 618              	.Letext0:
- 619              		.file 2 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
- 620              		.file 3 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 14
+ 665              		.loc 1 80 1 view .LVU144
+ 666 0044 02B0     		add	sp, sp, #8
+ 667              		.cfi_def_cfa_offset 8
+ 668              		@ sp needed
+ 669 0046 10BD     		pop	{r4, pc}
+ 670              	.L43:
+ 671              		.align	2
+ 672              	.L42:
+ 673 0048 00080240 		.word	1073874944
+ 674              		.cfi_endproc
+ 675              	.LFE246:
+ 677              		.section	.text.MX25FLASH_Program_Sector,"ax",%progbits
+ 678              		.align	1
+ 679              		.global	MX25FLASH_Program_Sector
+ 680              		.syntax unified
+ 681              		.thumb
+ 682              		.thumb_func
+ 684              	MX25FLASH_Program_Sector:
+ 685              	.LVL55:
+ 686              	.LFB247:
+  82:Core/Src/25flash.c **** uint8_t MX25FLASH_Program_Sector(uint32_t sector, uint8_t *data){
+ 687              		.loc 1 82 65 is_stmt 1 view -0
+ 688              		.cfi_startproc
+ 689              		@ args = 0, pretend = 0, frame = 264
+ 690              		@ frame_needed = 0, uses_anonymous_args = 0
+  82:Core/Src/25flash.c **** uint8_t MX25FLASH_Program_Sector(uint32_t sector, uint8_t *data){
+ 691              		.loc 1 82 65 is_stmt 0 view .LVU146
+ 692 0000 F0B5     		push	{r4, r5, r6, r7, lr}
+ 693              		.cfi_def_cfa_offset 20
+ 694              		.cfi_offset 4, -20
+ 695              		.cfi_offset 5, -16
+ 696              		.cfi_offset 6, -12
+ 697              		.cfi_offset 7, -8
+ 698              		.cfi_offset 14, -4
+ 699 0002 C3B0     		sub	sp, sp, #268
+ 700              		.cfi_def_cfa_offset 288
+ 701 0004 0746     		mov	r7, r0
+ 702 0006 0E46     		mov	r6, r1
+  83:Core/Src/25flash.c ****     MX25FLASH_WE();
+ 703              		.loc 1 83 5 is_stmt 1 view .LVU147
+ 704 0008 FFF7FEFF 		bl	MX25FLASH_WE
+ 705              	.LVL56:
+  84:Core/Src/25flash.c ****     for (uint8_t pg = 0; pg < 16; pg++){
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 16
 
 
- 621              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h"
- 622              		.file 5 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
- 623              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
- 624              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
- 625              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
- 626              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h"
- 627              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
- 628              		.file 11 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@x
- 629              		.file 12 "Core/Inc/25flash.h"
- 630              		.file 13 "<built-in>"
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s 			page 15
+ 706              		.loc 1 84 5 view .LVU148
+ 707              	.LBB3:
+  84:Core/Src/25flash.c ****     for (uint8_t pg = 0; pg < 16; pg++){
+ 708              		.loc 1 84 10 view .LVU149
+  84:Core/Src/25flash.c ****     for (uint8_t pg = 0; pg < 16; pg++){
+ 709              		.loc 1 84 18 is_stmt 0 view .LVU150
+ 710 000c 0024     		movs	r4, #0
+  84:Core/Src/25flash.c ****     for (uint8_t pg = 0; pg < 16; pg++){
+ 711              		.loc 1 84 5 view .LVU151
+ 712 000e 25E0     		b	.L45
+ 713              	.LVL57:
+ 714              	.L46:
+ 715              	.LBB4:
+  85:Core/Src/25flash.c ****         uint8_t tData[260];
+ 716              		.loc 1 85 9 is_stmt 1 view .LVU152
+  86:Core/Src/25flash.c ****         uint32_t address = sector*0x1000 + pg * 0x100;
+ 717              		.loc 1 86 9 view .LVU153
+  86:Core/Src/25flash.c ****         uint32_t address = sector*0x1000 + pg * 0x100;
+ 718              		.loc 1 86 47 is_stmt 0 view .LVU154
+ 719 0010 2102     		lsls	r1, r4, #8
+  86:Core/Src/25flash.c ****         uint32_t address = sector*0x1000 + pg * 0x100;
+ 720              		.loc 1 86 18 view .LVU155
+ 721 0012 01EB0733 		add	r3, r1, r7, lsl #12
+ 722              	.LVL58:
+  87:Core/Src/25flash.c ****         tData[0] = 0x02;
+ 723              		.loc 1 87 9 is_stmt 1 view .LVU156
+  87:Core/Src/25flash.c ****         tData[0] = 0x02;
+ 724              		.loc 1 87 18 is_stmt 0 view .LVU157
+ 725 0016 0222     		movs	r2, #2
+ 726 0018 8DF80420 		strb	r2, [sp, #4]
+  88:Core/Src/25flash.c ****         tData[1] = (address >> 16) & 0xFF;  // Most significant byte
+ 727              		.loc 1 88 9 is_stmt 1 view .LVU158
+  88:Core/Src/25flash.c ****         tData[1] = (address >> 16) & 0xFF;  // Most significant byte
+ 728              		.loc 1 88 29 is_stmt 0 view .LVU159
+ 729 001c 1A0C     		lsrs	r2, r3, #16
+  88:Core/Src/25flash.c ****         tData[1] = (address >> 16) & 0xFF;  // Most significant byte
+ 730              		.loc 1 88 18 view .LVU160
+ 731 001e 8DF80520 		strb	r2, [sp, #5]
+  89:Core/Src/25flash.c ****         tData[2] = (address >> 8) & 0xFF;
+ 732              		.loc 1 89 9 is_stmt 1 view .LVU161
+  89:Core/Src/25flash.c ****         tData[2] = (address >> 8) & 0xFF;
+ 733              		.loc 1 89 29 is_stmt 0 view .LVU162
+ 734 0022 1A0A     		lsrs	r2, r3, #8
+  89:Core/Src/25flash.c ****         tData[2] = (address >> 8) & 0xFF;
+ 735              		.loc 1 89 18 view .LVU163
+ 736 0024 8DF80620 		strb	r2, [sp, #6]
+  90:Core/Src/25flash.c ****         tData[3] = address & 0xFF;          // Least significant byte
+ 737              		.loc 1 90 9 is_stmt 1 view .LVU164
+  90:Core/Src/25flash.c ****         tData[3] = address & 0xFF;          // Least significant byte
+ 738              		.loc 1 90 18 is_stmt 0 view .LVU165
+ 739 0028 8DF80730 		strb	r3, [sp, #7]
+  91:Core/Src/25flash.c ****         memcpy(&tData[4], &data[pg*256], 256); 
+ 740              		.loc 1 91 9 is_stmt 1 view .LVU166
+ 741 002c 4FF48072 		mov	r2, #256
+ 742 0030 3144     		add	r1, r1, r6
+ 743 0032 02A8     		add	r0, sp, #8
+ 744 0034 FFF7FEFF 		bl	memcpy
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 17
+
+
+ 745              	.LVL59:
+  92:Core/Src/25flash.c ****         FLASH_CS_LOW();  // pull the CS LOW
+ 746              		.loc 1 92 9 view .LVU167
+ 747 0038 0B4D     		ldr	r5, .L48
+ 748 003a 0022     		movs	r2, #0
+ 749 003c 1021     		movs	r1, #16
+ 750 003e 2846     		mov	r0, r5
+ 751 0040 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 752              	.LVL60:
+  93:Core/Src/25flash.c ****         MX25FLASH_SPI_Write(tData, 260);
+ 753              		.loc 1 93 9 view .LVU168
+ 754 0044 4FF48271 		mov	r1, #260
+ 755 0048 01A8     		add	r0, sp, #4
+ 756 004a FFF7FEFF 		bl	MX25FLASH_SPI_Write
+ 757              	.LVL61:
+  94:Core/Src/25flash.c ****         FLASH_CS_HIGH();  // pull the HIGH
+ 758              		.loc 1 94 9 view .LVU169
+ 759 004e 0122     		movs	r2, #1
+ 760 0050 1021     		movs	r1, #16
+ 761 0052 2846     		mov	r0, r5
+ 762 0054 FFF7FEFF 		bl	HAL_GPIO_WritePin
+ 763              	.LVL62:
+ 764              	.LBE4:
+  84:Core/Src/25flash.c ****     for (uint8_t pg = 0; pg < 16; pg++){
+ 765              		.loc 1 84 37 discriminator 3 view .LVU170
+ 766 0058 0134     		adds	r4, r4, #1
+ 767              	.LVL63:
+  84:Core/Src/25flash.c ****     for (uint8_t pg = 0; pg < 16; pg++){
+ 768              		.loc 1 84 37 is_stmt 0 discriminator 3 view .LVU171
+ 769 005a E4B2     		uxtb	r4, r4
+ 770              	.LVL64:
+ 771              	.L45:
+  84:Core/Src/25flash.c ****     for (uint8_t pg = 0; pg < 16; pg++){
+ 772              		.loc 1 84 29 is_stmt 1 discriminator 1 view .LVU172
+ 773 005c 0F2C     		cmp	r4, #15
+ 774 005e D7D9     		bls	.L46
+ 775              	.LBE3:
+  96:Core/Src/25flash.c ****     return MX25FLASH_WFE();
+ 776              		.loc 1 96 5 view .LVU173
+  96:Core/Src/25flash.c ****     return MX25FLASH_WFE();
+ 777              		.loc 1 96 12 is_stmt 0 view .LVU174
+ 778 0060 FFF7FEFF 		bl	MX25FLASH_WFE
+ 779              	.LVL65:
+  97:Core/Src/25flash.c **** }
+ 780              		.loc 1 97 1 view .LVU175
+ 781 0064 43B0     		add	sp, sp, #268
+ 782              		.cfi_def_cfa_offset 20
+ 783              		@ sp needed
+ 784 0066 F0BD     		pop	{r4, r5, r6, r7, pc}
+ 785              	.LVL66:
+ 786              	.L49:
+  97:Core/Src/25flash.c **** }
+ 787              		.loc 1 97 1 view .LVU176
+ 788              		.align	2
+ 789              	.L48:
+ 790 0068 00080240 		.word	1073874944
+ 791              		.cfi_endproc
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 18
+
+
+ 792              	.LFE247:
+ 794              		.text
+ 795              	.Letext0:
+ 796              		.file 2 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
+ 797              		.file 3 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
+ 798              		.file 4 "Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f405xx.h"
+ 799              		.file 5 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
+ 800              		.file 6 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h"
+ 801              		.file 7 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h"
+ 802              		.file 8 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h"
+ 803              		.file 9 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h"
+ 804              		.file 10 "Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h"
+ 805              		.file 11 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@x
+ 806              		.file 12 "Core/Inc/25flash.h"
+ 807              		.file 13 "<built-in>"
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s 			page 19
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 25flash.c
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:21     .text.FLASH_SPI_Write:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:27     .text.FLASH_SPI_Write:00000000 FLASH_SPI_Write
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:55     .text.FLASH_SPI_Write:00000014 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:60     .text.FLASH_SPI_Read:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:66     .text.FLASH_SPI_Read:00000000 FLASH_SPI_Read
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:94     .text.FLASH_SPI_Read:00000014 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:99     .text.FLASH_Reset:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:105    .text.FLASH_Reset:00000000 FLASH_Reset
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:156    .text.FLASH_Reset:00000038 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:161    .text.FLASH_ReadID:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:167    .text.FLASH_ReadID:00000000 FLASH_ReadID
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:227    .text.FLASH_ReadID:0000004c $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:232    .text.FLASH_Read:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:238    .text.FLASH_Read:00000000 FLASH_Read
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:306    .text.FLASH_Read:0000004c $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:311    .text.FLASH_WE:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:317    .text.FLASH_WE:00000000 FLASH_WE
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:359    .text.FLASH_WE:00000030 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:364    .text.FLASH_WFE:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:370    .text.FLASH_WFE:00000000 FLASH_WFE
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:445    .text.FLASH_WFE:00000054 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:450    .text.FLASH_Program_Page:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:456    .text.FLASH_Program_Page:00000000 FLASH_Program_Page
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:535    .text.FLASH_Program_Page:00000058 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:540    .text.FLASH_Sector_Erase:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:546    .text.FLASH_Sector_Erase:00000000 FLASH_Sector_Erase
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccJZTXjC.s:613    .text.FLASH_Sector_Erase:00000048 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:21     .text.MX25FLASH_SPI_Write:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:27     .text.MX25FLASH_SPI_Write:00000000 MX25FLASH_SPI_Write
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:55     .text.MX25FLASH_SPI_Write:00000014 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:60     .text.MX25FLASH_SPI_Read:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:66     .text.MX25FLASH_SPI_Read:00000000 MX25FLASH_SPI_Read
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:95     .text.MX25FLASH_SPI_Read:00000014 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:100    .text.MX25FLASH_Reset:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:106    .text.MX25FLASH_Reset:00000000 MX25FLASH_Reset
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:157    .text.MX25FLASH_Reset:00000038 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:162    .text.MX25FLASH_ReadID:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:168    .text.MX25FLASH_ReadID:00000000 MX25FLASH_ReadID
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:228    .text.MX25FLASH_ReadID:0000004c $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:233    .text.MX25FLASH_Read:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:239    .text.MX25FLASH_Read:00000000 MX25FLASH_Read
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:307    .text.MX25FLASH_Read:0000004c $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:312    .text.MX25FLASH_WE:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:318    .text.MX25FLASH_WE:00000000 MX25FLASH_WE
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:360    .text.MX25FLASH_WE:00000030 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:365    .text.MX25FLASH_Read_Sector:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:371    .text.MX25FLASH_Read_Sector:00000000 MX25FLASH_Read_Sector
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:419    .text.MX25FLASH_WFE:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:425    .text.MX25FLASH_WFE:00000000 MX25FLASH_WFE
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:504    .text.MX25FLASH_WFE:00000058 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:509    .text.MX25FLASH_Program_Page:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:515    .text.MX25FLASH_Program_Page:00000000 MX25FLASH_Program_Page
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:594    .text.MX25FLASH_Program_Page:00000058 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:599    .text.MX25FLASH_Sector_Erase:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:605    .text.MX25FLASH_Sector_Erase:00000000 MX25FLASH_Sector_Erase
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:673    .text.MX25FLASH_Sector_Erase:00000048 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:678    .text.MX25FLASH_Program_Sector:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:684    .text.MX25FLASH_Program_Sector:00000000 MX25FLASH_Program_Sector
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccnPK5PA.s:790    .text.MX25FLASH_Program_Sector:00000068 $d
 
 UNDEFINED SYMBOLS
 HAL_SPI_Transmit

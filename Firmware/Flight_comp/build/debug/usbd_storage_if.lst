@@ -1,4 +1,4 @@
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 1
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 1
 
 
    1              		.cpu cortex-m4
@@ -52,13 +52,13 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 1
   22:USB_DEVICE/App/usbd_storage_if.c **** #include "usbd_storage_if.h"
   23:USB_DEVICE/App/usbd_storage_if.c **** 
   24:USB_DEVICE/App/usbd_storage_if.c **** /* USER CODE BEGIN INCLUDE */
-  25:USB_DEVICE/App/usbd_storage_if.c **** 
+  25:USB_DEVICE/App/usbd_storage_if.c **** #include "25flash.h"
   26:USB_DEVICE/App/usbd_storage_if.c **** /* USER CODE END INCLUDE */
   27:USB_DEVICE/App/usbd_storage_if.c **** 
   28:USB_DEVICE/App/usbd_storage_if.c **** /* Private typedef -----------------------------------------------------------*/
   29:USB_DEVICE/App/usbd_storage_if.c **** /* Private define ------------------------------------------------------------*/
   30:USB_DEVICE/App/usbd_storage_if.c **** /* Private macro -------------------------------------------------------------*/
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 2
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 2
 
 
   31:USB_DEVICE/App/usbd_storage_if.c **** 
@@ -118,7 +118,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 1
   85:USB_DEVICE/App/usbd_storage_if.c **** 
   86:USB_DEVICE/App/usbd_storage_if.c **** /**
   87:USB_DEVICE/App/usbd_storage_if.c ****   * @}
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 3
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 3
 
 
   88:USB_DEVICE/App/usbd_storage_if.c ****   */
@@ -178,7 +178,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 1
  142:USB_DEVICE/App/usbd_storage_if.c **** 
  143:USB_DEVICE/App/usbd_storage_if.c **** static int8_t STORAGE_Init_FS(uint8_t lun);
  144:USB_DEVICE/App/usbd_storage_if.c **** static int8_t STORAGE_GetCapacity_FS(uint8_t lun, uint32_t *block_num, uint16_t *block_size);
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 4
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 4
 
 
  145:USB_DEVICE/App/usbd_storage_if.c **** static int8_t STORAGE_IsReady_FS(uint8_t lun);
@@ -221,8 +221,8 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 1
   32              		@ frame_needed = 0, uses_anonymous_args = 0
   33              		@ link register save eliminated.
  179:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 2 */
- 180:USB_DEVICE/App/usbd_storage_if.c ****  UNUSED(lun);
-  34              		.loc 1 180 2 view .LVU1
+ 180:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(lun);
+  34              		.loc 1 180 3 view .LVU1
  181:USB_DEVICE/App/usbd_storage_if.c **** 
  182:USB_DEVICE/App/usbd_storage_if.c ****   return (USBD_OK);
   35              		.loc 1 182 3 view .LVU2
@@ -238,7 +238,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 1
   44              		.section	.text.STORAGE_GetCapacity_FS,"ax",%progbits
   45              		.align	1
   46              		.syntax unified
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 5
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 5
 
 
   47              		.thumb
@@ -298,7 +298,7 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 1
  204:USB_DEVICE/App/usbd_storage_if.c **** /**
  205:USB_DEVICE/App/usbd_storage_if.c ****   * @brief   Checks whether the medium is ready.
  206:USB_DEVICE/App/usbd_storage_if.c ****   * @param  lun:  Logical unit number.
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 6
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 6
 
 
  207:USB_DEVICE/App/usbd_storage_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
@@ -358,20 +358,19 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 1
  117 0000 0020     		movs	r0, #0
  118              	.LVL7:
  119              		.loc 1 230 1 view .LVU23
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 7
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 7
 
 
  120 0002 7047     		bx	lr
  121              		.cfi_endproc
  122              	.LFE246:
- 124              		.section	.text.STORAGE_Read_FS,"ax",%progbits
+ 124              		.section	.text.STORAGE_GetMaxLun_FS,"ax",%progbits
  125              		.align	1
  126              		.syntax unified
  127              		.thumb
  128              		.thumb_func
- 130              	STORAGE_Read_FS:
- 131              	.LVL8:
- 132              	.LFB247:
+ 130              	STORAGE_GetMaxLun_FS:
+ 131              	.LFB249:
  231:USB_DEVICE/App/usbd_storage_if.c **** 
  232:USB_DEVICE/App/usbd_storage_if.c **** /**
  233:USB_DEVICE/App/usbd_storage_if.c ****   * @brief  Reads data from the medium.
@@ -383,166 +382,241 @@ ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 1
  239:USB_DEVICE/App/usbd_storage_if.c ****   */
  240:USB_DEVICE/App/usbd_storage_if.c **** int8_t STORAGE_Read_FS(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t blk_len)
  241:USB_DEVICE/App/usbd_storage_if.c **** {
- 133              		.loc 1 241 1 is_stmt 1 view -0
- 134              		.cfi_startproc
- 135              		@ args = 0, pretend = 0, frame = 0
- 136              		@ frame_needed = 0, uses_anonymous_args = 0
- 137              		@ link register save eliminated.
  242:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 6 */
  243:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(lun);
- 138              		.loc 1 243 3 view .LVU25
- 244:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(buf);
- 139              		.loc 1 244 3 view .LVU26
- 245:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(blk_addr);
- 140              		.loc 1 245 3 view .LVU27
+ 244:USB_DEVICE/App/usbd_storage_if.c ****   // UNUSED(buf);
+ 245:USB_DEVICE/App/usbd_storage_if.c ****   // UNUSED(blk_addr);
  246:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(blk_len);
- 141              		.loc 1 246 3 view .LVU28
  247:USB_DEVICE/App/usbd_storage_if.c **** 
- 248:USB_DEVICE/App/usbd_storage_if.c ****   return (USBD_OK);
- 142              		.loc 1 248 3 view .LVU29
- 249:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE END 6 */
- 250:USB_DEVICE/App/usbd_storage_if.c **** }
- 143              		.loc 1 250 1 is_stmt 0 view .LVU30
- 144 0000 0020     		movs	r0, #0
- 145              	.LVL9:
- 146              		.loc 1 250 1 view .LVU31
- 147 0002 7047     		bx	lr
- 148              		.cfi_endproc
- 149              	.LFE247:
- 151              		.section	.text.STORAGE_Write_FS,"ax",%progbits
- 152              		.align	1
- 153              		.syntax unified
- 154              		.thumb
- 155              		.thumb_func
- 157              	STORAGE_Write_FS:
- 158              	.LVL10:
- 159              	.LFB248:
- 251:USB_DEVICE/App/usbd_storage_if.c **** 
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 8
+ 248:USB_DEVICE/App/usbd_storage_if.c ****   MX25FLASH_Read_Sector(blk_addr, buf);
+ 249:USB_DEVICE/App/usbd_storage_if.c **** 
+ 250:USB_DEVICE/App/usbd_storage_if.c ****   return (USBD_OK);
+ 251:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE END 6 */
+ 252:USB_DEVICE/App/usbd_storage_if.c **** }
+ 253:USB_DEVICE/App/usbd_storage_if.c **** 
+ 254:USB_DEVICE/App/usbd_storage_if.c **** /**
+ 255:USB_DEVICE/App/usbd_storage_if.c ****   * @brief  Writes data into the medium.
+ 256:USB_DEVICE/App/usbd_storage_if.c ****   * @param  lun: Logical unit number.
+ 257:USB_DEVICE/App/usbd_storage_if.c ****   * @param  buf: data buffer.
+ 258:USB_DEVICE/App/usbd_storage_if.c ****   * @param  blk_addr: Logical block address.
+ 259:USB_DEVICE/App/usbd_storage_if.c ****   * @param  blk_len: Blocks number.
+ 260:USB_DEVICE/App/usbd_storage_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
+ 261:USB_DEVICE/App/usbd_storage_if.c ****   */
+ 262:USB_DEVICE/App/usbd_storage_if.c **** int8_t STORAGE_Write_FS(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t blk_len)
+ 263:USB_DEVICE/App/usbd_storage_if.c **** {
+ 264:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 7 */
+ 265:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(lun);
+ 266:USB_DEVICE/App/usbd_storage_if.c ****   // UNUSED(buf);
+ 267:USB_DEVICE/App/usbd_storage_if.c ****   // UNUSED(blk_addr);
+ 268:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(blk_len);
+ 269:USB_DEVICE/App/usbd_storage_if.c **** 
+ 270:USB_DEVICE/App/usbd_storage_if.c ****   if (MX25FLASH_Sector_Erase(blk_addr) == 1) return (USBD_FAIL);
+ 271:USB_DEVICE/App/usbd_storage_if.c ****   if (MX25FLASH_Program_Sector(blk_addr, buf) == 1) return (USBD_FAIL);
+ 272:USB_DEVICE/App/usbd_storage_if.c **** 
+ 273:USB_DEVICE/App/usbd_storage_if.c ****   return (USBD_OK);
+ 274:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE END 7 */
+ 275:USB_DEVICE/App/usbd_storage_if.c **** }
+ 276:USB_DEVICE/App/usbd_storage_if.c **** 
+ 277:USB_DEVICE/App/usbd_storage_if.c **** /**
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 8
 
 
- 252:USB_DEVICE/App/usbd_storage_if.c **** /**
- 253:USB_DEVICE/App/usbd_storage_if.c ****   * @brief  Writes data into the medium.
- 254:USB_DEVICE/App/usbd_storage_if.c ****   * @param  lun: Logical unit number.
- 255:USB_DEVICE/App/usbd_storage_if.c ****   * @param  buf: data buffer.
- 256:USB_DEVICE/App/usbd_storage_if.c ****   * @param  blk_addr: Logical block address.
- 257:USB_DEVICE/App/usbd_storage_if.c ****   * @param  blk_len: Blocks number.
- 258:USB_DEVICE/App/usbd_storage_if.c ****   * @retval USBD_OK if all operations are OK else USBD_FAIL
- 259:USB_DEVICE/App/usbd_storage_if.c ****   */
- 260:USB_DEVICE/App/usbd_storage_if.c **** int8_t STORAGE_Write_FS(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t blk_len)
- 261:USB_DEVICE/App/usbd_storage_if.c **** {
- 160              		.loc 1 261 1 is_stmt 1 view -0
- 161              		.cfi_startproc
- 162              		@ args = 0, pretend = 0, frame = 0
- 163              		@ frame_needed = 0, uses_anonymous_args = 0
- 164              		@ link register save eliminated.
- 262:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 7 */
- 263:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(lun);
- 165              		.loc 1 263 3 view .LVU33
- 264:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(buf);
- 166              		.loc 1 264 3 view .LVU34
- 265:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(blk_addr);
- 167              		.loc 1 265 3 view .LVU35
- 266:USB_DEVICE/App/usbd_storage_if.c ****   UNUSED(blk_len);
- 168              		.loc 1 266 3 view .LVU36
- 267:USB_DEVICE/App/usbd_storage_if.c **** 
- 268:USB_DEVICE/App/usbd_storage_if.c ****   return (USBD_OK);
- 169              		.loc 1 268 3 view .LVU37
- 269:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE END 7 */
- 270:USB_DEVICE/App/usbd_storage_if.c **** }
- 170              		.loc 1 270 1 is_stmt 0 view .LVU38
- 171 0000 0020     		movs	r0, #0
- 172              	.LVL11:
- 173              		.loc 1 270 1 view .LVU39
- 174 0002 7047     		bx	lr
- 175              		.cfi_endproc
- 176              	.LFE248:
- 178              		.section	.text.STORAGE_GetMaxLun_FS,"ax",%progbits
- 179              		.align	1
- 180              		.syntax unified
- 181              		.thumb
- 182              		.thumb_func
- 184              	STORAGE_GetMaxLun_FS:
- 185              	.LFB249:
+ 278:USB_DEVICE/App/usbd_storage_if.c ****   * @brief  Returns the Max Supported LUNs.
+ 279:USB_DEVICE/App/usbd_storage_if.c ****   * @param  None
+ 280:USB_DEVICE/App/usbd_storage_if.c ****   * @retval Lun(s) number.
+ 281:USB_DEVICE/App/usbd_storage_if.c ****   */
+ 282:USB_DEVICE/App/usbd_storage_if.c **** int8_t STORAGE_GetMaxLun_FS(void)
+ 283:USB_DEVICE/App/usbd_storage_if.c **** {
+ 132              		.loc 1 283 1 is_stmt 1 view -0
+ 133              		.cfi_startproc
+ 134              		@ args = 0, pretend = 0, frame = 0
+ 135              		@ frame_needed = 0, uses_anonymous_args = 0
+ 136              		@ link register save eliminated.
+ 284:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 8 */
+ 285:USB_DEVICE/App/usbd_storage_if.c ****   return (STORAGE_LUN_NBR - 1);
+ 137              		.loc 1 285 3 view .LVU25
+ 286:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE END 8 */
+ 287:USB_DEVICE/App/usbd_storage_if.c **** }
+ 138              		.loc 1 287 1 is_stmt 0 view .LVU26
+ 139 0000 0020     		movs	r0, #0
+ 140 0002 7047     		bx	lr
+ 141              		.cfi_endproc
+ 142              	.LFE249:
+ 144              		.section	.text.STORAGE_Write_FS,"ax",%progbits
+ 145              		.align	1
+ 146              		.syntax unified
+ 147              		.thumb
+ 148              		.thumb_func
+ 150              	STORAGE_Write_FS:
+ 151              	.LVL8:
+ 152              	.LFB248:
+ 263:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 7 */
+ 153              		.loc 1 263 1 is_stmt 1 view -0
+ 154              		.cfi_startproc
+ 155              		@ args = 0, pretend = 0, frame = 0
+ 156              		@ frame_needed = 0, uses_anonymous_args = 0
+ 263:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 7 */
+ 157              		.loc 1 263 1 is_stmt 0 view .LVU28
+ 158 0000 38B5     		push	{r3, r4, r5, lr}
+ 159              		.cfi_def_cfa_offset 16
+ 160              		.cfi_offset 3, -16
+ 161              		.cfi_offset 4, -12
+ 162              		.cfi_offset 5, -8
+ 163              		.cfi_offset 14, -4
+ 164 0002 0D46     		mov	r5, r1
+ 165 0004 1446     		mov	r4, r2
+ 265:USB_DEVICE/App/usbd_storage_if.c ****   // UNUSED(buf);
+ 166              		.loc 1 265 3 is_stmt 1 view .LVU29
+ 268:USB_DEVICE/App/usbd_storage_if.c **** 
+ 167              		.loc 1 268 3 view .LVU30
+ 270:USB_DEVICE/App/usbd_storage_if.c ****   if (MX25FLASH_Program_Sector(blk_addr, buf) == 1) return (USBD_FAIL);
+ 168              		.loc 1 270 3 view .LVU31
+ 270:USB_DEVICE/App/usbd_storage_if.c ****   if (MX25FLASH_Program_Sector(blk_addr, buf) == 1) return (USBD_FAIL);
+ 169              		.loc 1 270 7 is_stmt 0 view .LVU32
+ 170 0006 1046     		mov	r0, r2
+ 171              	.LVL9:
+ 270:USB_DEVICE/App/usbd_storage_if.c ****   if (MX25FLASH_Program_Sector(blk_addr, buf) == 1) return (USBD_FAIL);
+ 172              		.loc 1 270 7 view .LVU33
+ 173 0008 FFF7FEFF 		bl	MX25FLASH_Sector_Erase
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 9
+
+
+ 174              	.LVL10:
+ 270:USB_DEVICE/App/usbd_storage_if.c ****   if (MX25FLASH_Program_Sector(blk_addr, buf) == 1) return (USBD_FAIL);
+ 175              		.loc 1 270 6 discriminator 1 view .LVU34
+ 176 000c 0128     		cmp	r0, #1
+ 177 000e 07D0     		beq	.L8
  271:USB_DEVICE/App/usbd_storage_if.c **** 
- 272:USB_DEVICE/App/usbd_storage_if.c **** /**
- 273:USB_DEVICE/App/usbd_storage_if.c ****   * @brief  Returns the Max Supported LUNs.
- 274:USB_DEVICE/App/usbd_storage_if.c ****   * @param  None
- 275:USB_DEVICE/App/usbd_storage_if.c ****   * @retval Lun(s) number.
- 276:USB_DEVICE/App/usbd_storage_if.c ****   */
- 277:USB_DEVICE/App/usbd_storage_if.c **** int8_t STORAGE_GetMaxLun_FS(void)
- 278:USB_DEVICE/App/usbd_storage_if.c **** {
- 186              		.loc 1 278 1 is_stmt 1 view -0
- 187              		.cfi_startproc
- 188              		@ args = 0, pretend = 0, frame = 0
- 189              		@ frame_needed = 0, uses_anonymous_args = 0
- 190              		@ link register save eliminated.
- 279:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 8 */
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 9
+ 178              		.loc 1 271 3 is_stmt 1 view .LVU35
+ 271:USB_DEVICE/App/usbd_storage_if.c **** 
+ 179              		.loc 1 271 7 is_stmt 0 view .LVU36
+ 180 0010 2946     		mov	r1, r5
+ 181 0012 2046     		mov	r0, r4
+ 182 0014 FFF7FEFF 		bl	MX25FLASH_Program_Sector
+ 183              	.LVL11:
+ 271:USB_DEVICE/App/usbd_storage_if.c **** 
+ 184              		.loc 1 271 6 discriminator 1 view .LVU37
+ 185 0018 0128     		cmp	r0, #1
+ 186 001a 03D0     		beq	.L9
+ 273:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE END 7 */
+ 187              		.loc 1 273 10 view .LVU38
+ 188 001c 0020     		movs	r0, #0
+ 189              	.L7:
+ 275:USB_DEVICE/App/usbd_storage_if.c **** 
+ 190              		.loc 1 275 1 view .LVU39
+ 191 001e 38BD     		pop	{r3, r4, r5, pc}
+ 192              	.LVL12:
+ 193              	.L8:
+ 270:USB_DEVICE/App/usbd_storage_if.c ****   if (MX25FLASH_Program_Sector(blk_addr, buf) == 1) return (USBD_FAIL);
+ 194              		.loc 1 270 53 discriminator 1 view .LVU40
+ 195 0020 0320     		movs	r0, #3
+ 196 0022 FCE7     		b	.L7
+ 197              	.L9:
+ 271:USB_DEVICE/App/usbd_storage_if.c **** 
+ 198              		.loc 1 271 60 discriminator 1 view .LVU41
+ 199 0024 0320     		movs	r0, #3
+ 200 0026 FAE7     		b	.L7
+ 201              		.cfi_endproc
+ 202              	.LFE248:
+ 204              		.section	.text.STORAGE_Read_FS,"ax",%progbits
+ 205              		.align	1
+ 206              		.syntax unified
+ 207              		.thumb
+ 208              		.thumb_func
+ 210              	STORAGE_Read_FS:
+ 211              	.LVL13:
+ 212              	.LFB247:
+ 241:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 6 */
+ 213              		.loc 1 241 1 is_stmt 1 view -0
+ 214              		.cfi_startproc
+ 215              		@ args = 0, pretend = 0, frame = 0
+ 216              		@ frame_needed = 0, uses_anonymous_args = 0
+ 241:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE BEGIN 6 */
+ 217              		.loc 1 241 1 is_stmt 0 view .LVU43
+ 218 0000 08B5     		push	{r3, lr}
+ 219              		.cfi_def_cfa_offset 8
+ 220              		.cfi_offset 3, -8
+ 221              		.cfi_offset 14, -4
+ 243:USB_DEVICE/App/usbd_storage_if.c ****   // UNUSED(buf);
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 10
 
 
- 280:USB_DEVICE/App/usbd_storage_if.c ****   return (STORAGE_LUN_NBR - 1);
- 191              		.loc 1 280 3 view .LVU41
- 281:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE END 8 */
- 282:USB_DEVICE/App/usbd_storage_if.c **** }
- 192              		.loc 1 282 1 is_stmt 0 view .LVU42
- 193 0000 0020     		movs	r0, #0
- 194 0002 7047     		bx	lr
- 195              		.cfi_endproc
- 196              	.LFE249:
- 198              		.global	USBD_Storage_Interface_fops_FS
- 199              		.section	.data.USBD_Storage_Interface_fops_FS,"aw"
- 200              		.align	2
- 203              	USBD_Storage_Interface_fops_FS:
- 204 0000 00000000 		.word	STORAGE_Init_FS
- 205 0004 00000000 		.word	STORAGE_GetCapacity_FS
- 206 0008 00000000 		.word	STORAGE_IsReady_FS
- 207 000c 00000000 		.word	STORAGE_IsWriteProtected_FS
- 208 0010 00000000 		.word	STORAGE_Read_FS
- 209 0014 00000000 		.word	STORAGE_Write_FS
- 210 0018 00000000 		.word	STORAGE_GetMaxLun_FS
- 211 001c 00000000 		.word	STORAGE_Inquirydata_FS
- 212              		.global	STORAGE_Inquirydata_FS
- 213              		.section	.rodata.STORAGE_Inquirydata_FS,"a"
- 214              		.align	2
- 217              	STORAGE_Inquirydata_FS:
- 218 0000 00800202 		.ascii	"\000\200\002\002\037\000\000\000STM     Product    "
- 218      1F000000 
- 218      53544D20 
- 218      20202020 
- 218      50726F64 
- 219 001b 20202020 		.ascii	"     0.01"
- 219      20302E30 
- 219      31
- 220              		.text
- 221              	.Letext0:
- 222              		.file 2 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
- 223              		.file 3 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
- 224              		.file 4 "Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc/usbd_msc.h"
- 225              		.file 5 "USB_DEVICE/App/usbd_storage_if.h"
- 226              		.file 6 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
-ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s 			page 10
+ 222              		.loc 1 243 3 is_stmt 1 view .LVU44
+ 246:USB_DEVICE/App/usbd_storage_if.c **** 
+ 223              		.loc 1 246 3 view .LVU45
+ 248:USB_DEVICE/App/usbd_storage_if.c **** 
+ 224              		.loc 1 248 3 view .LVU46
+ 225 0002 1046     		mov	r0, r2
+ 226              	.LVL14:
+ 248:USB_DEVICE/App/usbd_storage_if.c **** 
+ 227              		.loc 1 248 3 is_stmt 0 view .LVU47
+ 228 0004 FFF7FEFF 		bl	MX25FLASH_Read_Sector
+ 229              	.LVL15:
+ 250:USB_DEVICE/App/usbd_storage_if.c ****   /* USER CODE END 6 */
+ 230              		.loc 1 250 3 is_stmt 1 view .LVU48
+ 252:USB_DEVICE/App/usbd_storage_if.c **** 
+ 231              		.loc 1 252 1 is_stmt 0 view .LVU49
+ 232 0008 0020     		movs	r0, #0
+ 233 000a 08BD     		pop	{r3, pc}
+ 234              		.cfi_endproc
+ 235              	.LFE247:
+ 237              		.global	USBD_Storage_Interface_fops_FS
+ 238              		.section	.data.USBD_Storage_Interface_fops_FS,"aw"
+ 239              		.align	2
+ 242              	USBD_Storage_Interface_fops_FS:
+ 243 0000 00000000 		.word	STORAGE_Init_FS
+ 244 0004 00000000 		.word	STORAGE_GetCapacity_FS
+ 245 0008 00000000 		.word	STORAGE_IsReady_FS
+ 246 000c 00000000 		.word	STORAGE_IsWriteProtected_FS
+ 247 0010 00000000 		.word	STORAGE_Read_FS
+ 248 0014 00000000 		.word	STORAGE_Write_FS
+ 249 0018 00000000 		.word	STORAGE_GetMaxLun_FS
+ 250 001c 00000000 		.word	STORAGE_Inquirydata_FS
+ 251              		.global	STORAGE_Inquirydata_FS
+ 252              		.section	.rodata.STORAGE_Inquirydata_FS,"a"
+ 253              		.align	2
+ 256              	STORAGE_Inquirydata_FS:
+ 257 0000 00800202 		.ascii	"\000\200\002\002\037\000\000\000STM     Product    "
+ 257      1F000000 
+ 257      53544D20 
+ 257      20202020 
+ 257      50726F64 
+ 258 001b 20202020 		.ascii	"     0.01"
+ 258      20302E30 
+ 258      31
+ 259              		.text
+ 260              	.Letext0:
+ 261              		.file 2 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
+ 262              		.file 3 "/Users/kroko/Library/Application Support/Code/User/globalStorage/bmd.stm32-for-vscode/@xp
+ 263              		.file 4 "Middlewares/ST/STM32_USB_Device_Library/Class/MSC/Inc/usbd_msc.h"
+ 264              		.file 5 "USB_DEVICE/App/usbd_storage_if.h"
+ 265              		.file 6 "Core/Inc/25flash.h"
+ 266              		.file 7 "Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_def.h"
+ARM GAS  /var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s 			page 11
 
 
 DEFINED SYMBOLS
                             *ABS*:00000000 usbd_storage_if.c
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:21     .text.STORAGE_Init_FS:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:26     .text.STORAGE_Init_FS:00000000 STORAGE_Init_FS
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:45     .text.STORAGE_GetCapacity_FS:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:50     .text.STORAGE_GetCapacity_FS:00000000 STORAGE_GetCapacity_FS
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:77     .text.STORAGE_IsReady_FS:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:82     .text.STORAGE_IsReady_FS:00000000 STORAGE_IsReady_FS
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:101    .text.STORAGE_IsWriteProtected_FS:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:106    .text.STORAGE_IsWriteProtected_FS:00000000 STORAGE_IsWriteProtected_FS
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:125    .text.STORAGE_Read_FS:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:130    .text.STORAGE_Read_FS:00000000 STORAGE_Read_FS
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:152    .text.STORAGE_Write_FS:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:157    .text.STORAGE_Write_FS:00000000 STORAGE_Write_FS
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:179    .text.STORAGE_GetMaxLun_FS:00000000 $t
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:184    .text.STORAGE_GetMaxLun_FS:00000000 STORAGE_GetMaxLun_FS
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:203    .data.USBD_Storage_Interface_fops_FS:00000000 USBD_Storage_Interface_fops_FS
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:200    .data.USBD_Storage_Interface_fops_FS:00000000 $d
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:217    .rodata.STORAGE_Inquirydata_FS:00000000 STORAGE_Inquirydata_FS
-/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccWH6ntk.s:214    .rodata.STORAGE_Inquirydata_FS:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:21     .text.STORAGE_Init_FS:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:26     .text.STORAGE_Init_FS:00000000 STORAGE_Init_FS
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:45     .text.STORAGE_GetCapacity_FS:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:50     .text.STORAGE_GetCapacity_FS:00000000 STORAGE_GetCapacity_FS
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:77     .text.STORAGE_IsReady_FS:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:82     .text.STORAGE_IsReady_FS:00000000 STORAGE_IsReady_FS
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:101    .text.STORAGE_IsWriteProtected_FS:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:106    .text.STORAGE_IsWriteProtected_FS:00000000 STORAGE_IsWriteProtected_FS
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:125    .text.STORAGE_GetMaxLun_FS:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:130    .text.STORAGE_GetMaxLun_FS:00000000 STORAGE_GetMaxLun_FS
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:145    .text.STORAGE_Write_FS:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:150    .text.STORAGE_Write_FS:00000000 STORAGE_Write_FS
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:205    .text.STORAGE_Read_FS:00000000 $t
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:210    .text.STORAGE_Read_FS:00000000 STORAGE_Read_FS
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:242    .data.USBD_Storage_Interface_fops_FS:00000000 USBD_Storage_Interface_fops_FS
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:239    .data.USBD_Storage_Interface_fops_FS:00000000 $d
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:256    .rodata.STORAGE_Inquirydata_FS:00000000 STORAGE_Inquirydata_FS
+/var/folders/t4/6192qx0n3zgdnvcwt906k_mw0000gn/T//ccdtjCr6.s:253    .rodata.STORAGE_Inquirydata_FS:00000000 $d
 
-NO UNDEFINED SYMBOLS
+UNDEFINED SYMBOLS
+MX25FLASH_Sector_Erase
+MX25FLASH_Program_Sector
+MX25FLASH_Read_Sector

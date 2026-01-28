@@ -22,7 +22,7 @@
 #include "usbd_storage_if.h"
 
 /* USER CODE BEGIN INCLUDE */
-
+#include "25flash.h"
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -63,8 +63,8 @@
   */
 
 #define STORAGE_LUN_NBR                  1
-#define STORAGE_BLK_NBR                  512
-#define STORAGE_BLK_SIZ                  0x1000
+#define STORAGE_BLK_NBR                  0x10000
+#define STORAGE_BLK_SIZ                  0x200
 
 /* USER CODE BEGIN PRIVATE_DEFINES */
 
@@ -177,7 +177,7 @@ USBD_StorageTypeDef USBD_Storage_Interface_fops_FS =
 int8_t STORAGE_Init_FS(uint8_t lun)
 {
   /* USER CODE BEGIN 2 */
- UNUSED(lun);
+  UNUSED(lun);
 
   return (USBD_OK);
   /* USER CODE END 2 */
@@ -245,7 +245,7 @@ int8_t STORAGE_Read_FS(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t bl
   // UNUSED(blk_addr);
   UNUSED(blk_len);
 
-  FLASH_Read_Sector(blk_addr, &buf);
+  MX25FLASH_Read_Sector(blk_addr, buf);
 
   return (USBD_OK);
   /* USER CODE END 6 */
@@ -267,9 +267,9 @@ int8_t STORAGE_Write_FS(uint8_t lun, uint8_t *buf, uint32_t blk_addr, uint16_t b
   // UNUSED(blk_addr);
   UNUSED(blk_len);
 
-  FLASH_Sector_Erase(blk_addr);
-  FLASH_Program_Sector(blk_addr, &buf);
-  
+  if (MX25FLASH_Sector_Erase(blk_addr) == 1) return (USBD_FAIL);
+  if (MX25FLASH_Program_Sector(blk_addr, buf) == 1) return (USBD_FAIL);
+
   return (USBD_OK);
   /* USER CODE END 7 */
 }

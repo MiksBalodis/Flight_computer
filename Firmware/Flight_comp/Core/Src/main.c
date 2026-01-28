@@ -41,6 +41,8 @@
 /* Private define ------------------------------------------------------------*/
 /* USER CODE BEGIN PD */
 #define VBAT_DIV_K  2.54
+
+#define LSM6DSO_I2C_ADDR (0x6A << 1)
 /* USER CODE END PD */
 
 /* Private macro -------------------------------------------------------------*/
@@ -71,6 +73,8 @@ DMA_HandleTypeDef hdma_tim3_ch1_trig;
 UART_HandleTypeDef huart1;
 
 /* USER CODE BEGIN PV */
+LSM6DSO_Object_t lsm6dso1;
+
 float battery_v;
 uint32_t adc_buff[1];
 /* USER CODE END PV */
@@ -146,7 +150,7 @@ int main(void)
   MX_USB_DEVICE_Init();
   MX_CRC_Init();
   /* USER CODE BEGIN 2 */
-
+  LSM6DSO_Init(&lsm6dso1);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -876,6 +880,35 @@ void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
   }
 }
 
+
+int32_t platform_write(void *handle, uint8_t reg, const uint8_t *bufp, uint16_t len)
+{
+    HAL_I2C_Mem_Write(handle,
+                      LSM6DSO_I2C_ADDR,
+                      reg,
+                      I2C_MEMADD_SIZE_8BIT,
+                      (uint8_t *)bufp,
+                      len,
+                      HAL_MAX_DELAY);
+    return 0;
+}
+
+int32_t platform_read(void *handle, uint8_t reg, uint8_t *bufp, uint16_t len)
+{
+    HAL_I2C_Mem_Read(handle,
+                     LSM6DSO_I2C_ADDR,
+                     reg,
+                     I2C_MEMADD_SIZE_8BIT,
+                     bufp,
+                     len,
+                     HAL_MAX_DELAY);
+    return 0;
+}
+
+void platform_delay(uint32_t ms)
+{
+    HAL_Delay(ms);
+}
 /* USER CODE END 4 */
 
 /**
