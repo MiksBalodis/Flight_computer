@@ -102,6 +102,8 @@ Sistēma sastāv no trim galvenajiem blokiem:
 - PID regulators
 - Kalmana filtrs stāvokļa novērtēšanai
 
+![Projekta izstrādes Gantt diagramma](Documents/System_architecture.png)
+
 ---
 ## Izstrādes plāns (10 nedēļas)
 
