@@ -263,7 +263,7 @@ Pilnībā sagatavots projekts demonstrācijai un prezentācijai.
 
 ## Projekta izstrādes grafiks
 
-![Projekta izstrādes Gantt diagramma](docs/gantt_diagramm.png)
+![Projekta izstrādes Gantt diagramma](Documents/gantt_diagramm.png)
 
 ---
 
